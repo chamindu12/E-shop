@@ -1,0 +1,1803 @@
+2025-05-01 22:20:17 - Starting BackendApplication using Java 22.0.1 with PID 6904 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-01 22:20:17 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 22:20:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 22:20:18 - Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2025-05-01 22:20:19 - Tomcat initialized with port 8080 (http)
+2025-05-01 22:20:19 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 22:20:19 - Starting service [Tomcat]
+2025-05-01 22:20:19 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-01 22:20:19 - Initializing Spring embedded WebApplicationContext
+2025-05-01 22:20:19 - Root WebApplicationContext: initialization completed in 1758 ms
+2025-05-01 22:20:19 - Filter 'corsFilter' configured for use
+2025-05-01 22:20:19 - HikariPool-1 - Starting...
+2025-05-01 22:20:19 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8b13d91
+2025-05-01 22:20:19 - HikariPool-1 - Start completed.
+2025-05-01 22:20:19 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 22:20:19 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-01 22:20:19 - HHH000026: Second-level cache disabled
+2025-05-01 22:20:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 22:20:20 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 22:20:20 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 22:20:24 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 22:20:24 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 22:20:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 22:20:25 - 
+
+Using generated security password: 62e620cd-881b-4db0-934c-dc3220075a12
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 22:20:25 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 22:20:25 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-01 22:20:25 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-01 22:20:25 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-01 22:20:25 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-01 22:20:25 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 22:20:25 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 22:20:25 - Started BackendApplication in 8.712 seconds (process running for 9.477)
+2025-05-01 22:21:57 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 22:21:57 - Initializing Servlet 'dispatcherServlet'
+2025-05-01 22:21:57 - Detected StandardServletMultipartResolver
+2025-05-01 22:21:57 - Detected AcceptHeaderLocaleResolver
+2025-05-01 22:21:57 - Detected FixedThemeResolver
+2025-05-01 22:21:57 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3bede349
+2025-05-01 22:21:57 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36e11b60
+2025-05-01 22:21:57 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-01 22:21:57 - Completed initialization in 1 ms
+2025-05-01 22:21:57 - GET "/checkEmail?email=saman@gmail.com", parameters={masked}
+2025-05-01 22:21:57 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-01 22:21:57 - Checking if email exists: saman@gmail.com -> false
+2025-05-01 22:21:57 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:21:57 - Writing [false]
+2025-05-01 22:21:57 - Completed 200 OK
+2025-05-01 22:21:57 - POST "/user", parameters={}
+2025-05-01 22:21:57 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-01 22:21:57 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@e15af51]
+2025-05-01 22:21:57 - Registering user: saman@gmail.com
+2025-05-01 22:21:57 - User registered successfully: 552
+2025-05-01 22:21:57 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:21:57 - Writing [backend.model.UserModel@e15af51]
+2025-05-01 22:21:57 - Completed 200 OK
+2025-05-01 22:22:15 - POST "/login", parameters={}
+2025-05-01 22:22:15 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-01 22:22:15 - Read "application/json;charset=UTF-8" to [{email=saman@gmail.com, password=Saman@123, captchaToken=03AFcWeA40ZcowNQNhDlmHpCBKQ6gfcT5Zyb7bb0eJB (truncated)...]
+2025-05-01 22:22:15 - Login attempt for email: saman@gmail.com
+2025-05-01 22:22:16 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA40ZcowNQNhDlmHpCBKQ6gfcT5Zyb7bb0eJBrd9UcL727GrwtY4hJsfSBLqHyvacROFdePtnGoaHeo4FrXcAISf1rHfSp-YTbi-Q7pmT7WpPrGL9SVb1AbdhIF4n43Oz4S3WJ7TI4zdMPvIv57MVyPG3j6rUBBzzZkfAlZQ7TgYNznDnCoO7Mca0I6dARbc74B2oT3uOcnlje1OBJNsSMZ9fJiEWSVeWnyf5tCfFRcQYm03fV8qoSUTjQ4tPJvE9n0GDPIZ2LoCmkXAj42ttDv2hJ8W7leXCUPIlcx6BYYRPRvgNuOOkbvd6vabpSZuNpzfP7A7gmiz61wljnW6vQabcOVxgAAthhBmX_hbxisDavWh8rKaI7gp-uMUgTtN6e0rdaWYIqxOldHPvQhsGXJZzuNbWEdl0hdfe5qm-2pEQyu-tXrFzJbBrc5XmaTc7la87Nh4B2xOBi7AwTvk4nJxhNRhd1LQ5n6vEg3KqBE7uGyGAewjD5UdQzzuqsBi3NPNV5VHiR8vm1tN1hfdAWGTe9N2oPsCIqB2q3kRmiuZbcB09cFEzkDdkFsl5hBSDqgLtiqM3HzfsAscknaGXyjS6fqoLy5ZrN-QPWY7TZ827jB_w6aH-OHAEB_8UX4GUgsavl_DalCx-5vNryulDbBTyNMpN-o_agrMYG6WFx-jN43pBbP_YtAkiN0zs3bF2CZIOa5P6pUNWpufevkxXfV0c5T7IqC13xIruOVx1llpqQfkjN2pPrI-7HvyAV8bavGJmuaKmKSiPaJMUCWP52TsZF6KuuG4RQc_nMeOfc5zknPYL793PGZaWM0pQDRhrnJ9PNVH143CGTWxge0lNsbG93uzf8fxNhi7729k2GI-Pg2AKF3mMyCQbBVabjA0Mg9DQBGUo9wZ8MZIptF5sFGtzzYFf4sna_4hSA1vY1oUJkjo1AErSdphM3503LtUnCVJp-QgYCmNsyra1sLE2FgN_xVYIxak7N42O5ALIxmLLlcxxEOys-zLrBmTR8yN6wZe4o7MlmlZkakZAWuXtWMI2-hCfKFObe5NU--dI_ZXjljbEU1GrqUNd1gaz5EmK8GziCACYlq41dqdho3KV18HdevLHZgk8NDpELjSK4rj8VPZZgTITaWF_5yeqHIGnT0ujY__6GQbzVHdReLHDB5EOdDsBsdixf-bt6YG56rUsKyfEQVbq7jMpS3ctAIm3RbDarJ96cmIWF08pI8fmj5bACRqt3GvruOucOgsHB8hsQJePbtQIviHzjAiJ1KnxkDOe3CJXqfWbX5cDe9o_JYAaz61UN-eg_GkYgMWeEGvw0F8gd0luUOQ_hw_f46b0PtgorfKHafdva5OADejuQOAabK83Wmti9Y28-X7RGGO04uB66J2gfb3UpJoZTksar4GvOO3G9r0IiwBE1ha_SJrbmtjRrQRaJPRdp1Mu5frcZmZDZb7d5sXcsJpNuE2jGF0QkLl6Abajn0RL2GpfZZl140GD96a5fUdfcu0xx5FNwWWwj3ijuKNHTlzYIYzc6AWLZNyBV1tnmcSFXjMcCVIEqX4qSZvnKoVe9qom6iSj_3Mv95xoVv4CdMgIkmVjxbfxwMmmJYaBfQ6HuxRTPblgI3dfuqAO99LaTNRcCaFA-5_U4VklUrGSErCRYKQveQu0u1UP0pQjil85VAjNPrhHlapgKPvqhdJTgHH8-mJjt2c1yHajdW0em5SMyZhZ_18DwLnojimb-Pt_vIv6LZLAzfnrk0sYijxeGYhQJr4gh80nGtz_y_VRpS7-ZlQw5Pqp8x5kOvAZmqtpECH01s5z5EWg5CUh4_KCPSV4Q171q-SzyVS2CppSPymx-77Dbqg88hVdAntsI6gFhh3TGGynU9t2MXYbtK7BTi0e8nVW5UNG-OFO0e7LdX-Tx0L01tHwa4J_v_xVNuHp42GkJP7Z9mOUJ80NKz7w5wJhnm1DiiEjtbdINNhhYsRGwGun6vGrps5s20bAfMf6iHxdEfKlqyc_CRPfJ-iiEkGen97581DHTq2_p2cE78lUOyjw6dYWHfHe-s8IaUrz_sfc2NzxmSFqpf_pY0sQv2IVBe3cQl4pHixSTXnXFNzRfHfzjWyXFJhylKzhtBItfJXmbGMMb7SVQ
+2025-05-01 22:22:16 - Accept=[application/json, application/*+json]
+2025-05-01 22:22:16 - Response 200 OK
+2025-05-01 22:22:16 - Reading to [backend.service.CaptchaResponse]
+2025-05-01 22:22:16 - User logged in successfully: saman@gmail.com
+2025-05-01 22:22:16 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:22:16 - Writing [{id=552, message=Login successful}]
+2025-05-01 22:22:16 - Completed 200 OK
+2025-05-01 22:22:18 - GET "/me", parameters={}
+2025-05-01 22:22:18 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-01 22:22:18 - User session found for ID: 552
+2025-05-01 22:22:18 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:22:18 - Writing [{fullName=saman, email=saman@gmail.com, id=552}]
+2025-05-01 22:22:18 - Completed 200 OK
+2025-05-01 22:22:18 - GET "/inventory", parameters={}
+2025-05-01 22:22:18 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-01 22:22:18 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:22:18 - Writing [[]]
+2025-05-01 22:22:18 - Completed 200 OK
+2025-05-01 22:30:44 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 22:30:44 - Graceful shutdown complete
+2025-05-01 22:30:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 22:30:44 - HikariPool-1 - Shutdown initiated...
+2025-05-01 22:30:44 - HikariPool-1 - Shutdown completed.
+2025-05-01 22:37:30 - Starting BackendApplication using Java 22.0.1 with PID 15596 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-01 22:37:30 - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 22:37:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-01 22:37:30 - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2025-05-01 22:37:31 - Tomcat initialized with port 8080 (http)
+2025-05-01 22:37:31 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 22:37:31 - Starting service [Tomcat]
+2025-05-01 22:37:31 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-01 22:37:31 - Initializing Spring embedded WebApplicationContext
+2025-05-01 22:37:31 - Root WebApplicationContext: initialization completed in 1175 ms
+2025-05-01 22:37:31 - Filter 'corsFilter' configured for use
+2025-05-01 22:37:31 - HikariPool-1 - Starting...
+2025-05-01 22:37:31 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cc01c7f
+2025-05-01 22:37:31 - HikariPool-1 - Start completed.
+2025-05-01 22:37:31 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-01 22:37:31 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-01 22:37:31 - HHH000026: Second-level cache disabled
+2025-05-01 22:37:31 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-01 22:37:31 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-01 22:37:32 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-01 22:37:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-01 22:37:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 22:37:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-01 22:37:33 - 
+
+Using generated security password: 90563d8e-7fa5-4da6-9df1-f59c1f082790
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-01 22:37:33 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-01 22:37:33 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-01 22:37:33 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-01 22:37:33 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-01 22:37:33 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-01 22:37:33 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 22:37:33 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-01 22:37:33 - Started BackendApplication in 3.924 seconds (process running for 4.884)
+2025-05-01 22:38:17 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 22:38:17 - Initializing Servlet 'dispatcherServlet'
+2025-05-01 22:38:17 - Detected StandardServletMultipartResolver
+2025-05-01 22:38:17 - Detected AcceptHeaderLocaleResolver
+2025-05-01 22:38:17 - Detected FixedThemeResolver
+2025-05-01 22:38:17 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@17f7a1af
+2025-05-01 22:38:17 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@e280006
+2025-05-01 22:38:17 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-01 22:38:17 - Completed initialization in 1 ms
+2025-05-01 22:38:17 - POST "/login", parameters={}
+2025-05-01 22:38:17 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-01 22:38:17 - Read "application/json;charset=UTF-8" to [{email=saman@gmail.com, password=Saman@123, captchaToken=03AFcWeA7njEeDEj-jbA6-Vv-nIFPTZu8rL3fctJeQ7 (truncated)...]
+2025-05-01 22:38:17 - Login attempt for email: saman@gmail.com
+2025-05-01 22:38:18 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7njEeDEj-jbA6-Vv-nIFPTZu8rL3fctJeQ7Pbw7uCeYn_6mfxmoFHEJ_BDaQIS37m-QHcz2ar7XX7BTwsdMB8f7Df7vHVG6zsv9jZTFWQ8yJrWKNBBtV_55GrnsC1b2TWmnOcPwWH0kOwSK31RNmR7TBWJbv0FujdL0WgMSA8xBfQVJfccHRboWZOW9uPHlpVd4Ya65zh4uofCXDJP5X-r5qIBYx1QIRTgPqHNOn8Brw7JMqgXy16e8E-wYg3GuLPZ9knDbqXEPvNPAwvg34gUQkEw53bx_6xvgBkeV3Cv1u5QgUgGRB0Nts8EGLUQCehd1MGAYCVstPKeG8wIf-IGEElo8VhVrecOyAijoIKd3hpV0S7ZLYHoOa-irTTAlelHSXmtTjuUjkywg8lW_n9-VekgsAXj5fH2UNH1C9y1ljPVRRflAJKmiYhnbVXkWrV1AeZhr-QnY-F2_E_egaUfuFnmIljKO_rEmBi3vuuYUJoctLwNhlQeZbJzd8rZQHREVWTxQLXNHPyeTbT7GTkU3AdM_-p8UyA38-niZYwIqZt125_8ab4koAdkYJUNEsLQrm9MExzcFuUgMUlXKPkbxiMlUWABiUHe6h2m827uy_O4-ak5W3jTC1u-DDtTp61_7Yf4GHetZ-D-cQAxUSkVB1eBf-CP47Y2Bwwy7zclzWNoekOgly79vRUeWeEIcQsHQOSTMb7NC4auSGP1B7GWAS1ykom0qbozPgKxF13DKK7jBkKvQulXvCahnMLcfVwRgRlmxojf6GAw7oQ5pevvmO97NUzT3Px5RGK37YFQVIxulr098XJFm1AQgg7VWJRmyg-ASV0ptPHwELjhRF_whS9c3SV_Uwfx7mNE4QP7Xf6IItXj_CbP9leuTUQQWLbNea5zUcvIymjQErNepinjQP3LvRVi9cMVc4KeYYT60GSfrH1Azbm7rFAwZjtmzTEmICm1gJmHVoLBgssnHUqHi2UsiYjcfeezGOlQRFajYNcWS_uf3pQ6o89930nuNsnNS4EFaGJ7qbLtDjJb-T_zjFzn22gtlCrcu9Cn7zfZlFhovUTjetQrchgASeEYKy1nFvkvsgbPYNNhiI767akXlpyfLQFUhE6RtfuIHNTB-4TqNNWEVB2SUlFuITplRtGa0c2N3hYUXfLkW_84MbxYEGWIcYZt2fXpkyof4xtozSIlu7BlLHp-kdKkI6HA9ksZv9jBtlFGIgDGYvrMhrVvQ849NoSc4z5QJi43JJAJwjgd3ejAYLlcLD3iQ4Irkclxtcxx4jeQFVVQXq8lLn3E_RRuJfQM7ZakoSj1CoGbGm7ZZ3baJWRGPqsOLwa2QzgyOvN76pmOLelVvgt4Ejh29JkSup0MTVNRDPRdSyELuvK_DZSOOB5eiKru6cKKVsvLOk0hVIhLZUCB6TxR9A9zg_eLhoGTvQDl0hfipdn2ohCLFav8m8-Zkncds1JwaqDD4ZpUh3xvvh47lWhrDle7F68PjF6iqqAldgwyJNnGTvYqUr_giZYYvUMhNc4ujAFGQB0pfAq1c9jZbw1p8cN0x6TTcXy_6BjTkrt31mAa6UX6FKpdsp9J5UvB8mhqUXx8o9h504OyPbYLtIOOl9CeFpVP_89oxvWT4EoXnE1XdBDkRpnnb_EMOy1fUHVQMwIvzLfXZ4xJKYYs4iotyLRsB8lJQZE4StrdT_ib-0SPlW_JtD9RexaAyRgenga47wsxRoJEZ3Yd1XXoxETCZkxKXuWmijKjW4nzm3jG7Wg8mlmU3w85eLYwkEwFvxWmG5Jw3CvWMKmssXK0e4_c2MT8OX3kYJdyANfMg5N2EZpmCzHQJ0T-I6sTWLR6Q-thz7dzqpuHy4LoFs18PLVGlZ8J_lECpdNVr4mrCqVBuRogCI5HX3ZVw4R_3IUAjBi5-u2rnb6bn8uB1qb07lCC0QDcT3oPl1btjenzvxFkOOlTltExz_Vs7xoXogUhWWrvyNtskaK-Brf1JabyECk3F6HJwOJ8rsEWQYvRZD6Q6kIukBJb8LPpYJHHbr9_mgwMFOGaprVJi3CCkfHJHttPb4k7iC-ErMZHueYuiJ2ipFgcISqYSYtPGAA4GC_Ws9dORdp39Cvkcynilxzp_7jwUhgGeB1qPQ
+2025-05-01 22:38:18 - Accept=[application/json, application/*+json]
+2025-05-01 22:38:18 - Response 200 OK
+2025-05-01 22:38:18 - Reading to [backend.service.CaptchaResponse]
+2025-05-01 22:38:18 - User logged in successfully: saman@gmail.com
+2025-05-01 22:38:18 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:18 - Writing [{id=552, message=Login successful}]
+2025-05-01 22:38:18 - Completed 200 OK
+2025-05-01 22:38:20 - GET "/me", parameters={}
+2025-05-01 22:38:20 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-01 22:38:20 - User session found for ID: 552
+2025-05-01 22:38:20 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:20 - Writing [{email=saman@gmail.com, fullName=saman, id=552}]
+2025-05-01 22:38:20 - Completed 200 OK
+2025-05-01 22:38:20 - GET "/inventory", parameters={}
+2025-05-01 22:38:20 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-01 22:38:20 - Fetching all inventory items
+2025-05-01 22:38:20 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:20 - Writing [[]]
+2025-05-01 22:38:20 - Completed 200 OK
+2025-05-01 22:38:34 - GET "/user/552", parameters={}
+2025-05-01 22:38:34 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-01 22:38:34 - Fetching user by ID: 552
+2025-05-01 22:38:34 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:34 - Writing [backend.model.UserModel@d6e35ec]
+2025-05-01 22:38:34 - Completed 200 OK
+2025-05-01 22:38:38 - GET "/me", parameters={}
+2025-05-01 22:38:38 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-01 22:38:38 - User session found for ID: 552
+2025-05-01 22:38:38 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:38 - Writing [{email=saman@gmail.com, fullName=saman, id=552}]
+2025-05-01 22:38:38 - Completed 200 OK
+2025-05-01 22:38:38 - GET "/inventory", parameters={}
+2025-05-01 22:38:38 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-01 22:38:38 - Fetching all inventory items
+2025-05-01 22:38:38 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:38:38 - Writing [[]]
+2025-05-01 22:38:38 - Completed 200 OK
+2025-05-01 22:39:26 - GET "/user/552", parameters={}
+2025-05-01 22:39:26 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-01 22:39:26 - Fetching user by ID: 552
+2025-05-01 22:39:26 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:39:26 - Writing [backend.model.UserModel@1d1eda38]
+2025-05-01 22:39:26 - Completed 200 OK
+2025-05-01 22:39:29 - GET "/user/552", parameters={}
+2025-05-01 22:39:29 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-01 22:39:29 - Fetching user by ID: 552
+2025-05-01 22:39:29 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:39:29 - Writing [backend.model.UserModel@77c4871c]
+2025-05-01 22:39:29 - Completed 200 OK
+2025-05-01 22:39:36 - PUT "/user/552", parameters={}
+2025-05-01 22:39:36 - Mapped to backend.controller.UserController#updateProfile(UserModel, long)
+2025-05-01 22:39:36 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@340a7a64]
+2025-05-01 22:39:36 - Updating profile for user ID: 552
+2025-05-01 22:39:36 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:39:36 - Writing [backend.model.UserModel@26089154]
+2025-05-01 22:39:36 - Completed 200 OK
+2025-05-01 22:39:38 - GET "/user/552", parameters={}
+2025-05-01 22:39:38 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-01 22:39:38 - Fetching user by ID: 552
+2025-05-01 22:39:38 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:39:38 - Writing [backend.model.UserModel@2c58f1ad]
+2025-05-01 22:39:38 - Completed 200 OK
+2025-05-01 22:43:31 - POST "/login", parameters={}
+2025-05-01 22:43:31 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-01 22:43:31 - Read "application/json;charset=UTF-8" to [{email=saman@gmail.com, password=Saman@123, captchaToken=03AFcWeA7sZWlhCoextDoY3JU9dY2LacTzYIBgcZ2zh (truncated)...]
+2025-05-01 22:43:31 - Login attempt for email: saman@gmail.com
+2025-05-01 22:43:31 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7sZWlhCoextDoY3JU9dY2LacTzYIBgcZ2zhYuWwjaGkaQ3lm8I6GV6U2t5OrgWDTyFk-3S6DT4m_gkHRbtvCpTP4wgHbiSvM3IJNVYevxxx4YxGeIBGhpzachwvlYW66Mx6lxhhIsRrTlLe7xt2mBV_PL_tJF6dMTdN0ew-7nh46VSW1kqtNfsSAS0kKp5Y-8bi38pIpY0QLvr-SDibuwT4eX128VBHGQ9zvhhIWPifi_hb7NUlqqbB5MIjDzmm1_PWni1DFXM-ym-KfEkLHdk3EvHBtdVdJFU4PnZZbbAECIppRa_iMf_QpbRngakI7MncKEOtaYkpqIAmRHyfmQyrXC427bjBV1z8qyJFM-EDc4KQVpRhV67cvZQY1bRmTVaLwi8UDPTcpraUrHhm1_lFqzSwAGU7dAu5SS1-0uDZ9ATsAce5pRHnH3D1QCMnce0kbf3zRiykWoYK5WzzfozYSaSkIvjIvUgNrK1aG4yBOUfgkA9jiKM2BZoLhVtz6XL4af9hvVXARIdYNmpzR01GLlCLRqvcQa5piNJbK7EVhgjORS3flF3MgwqxVH5IMeQcYj-akk4qdaLy8zH79AxtqT-yTg-F41pWcvQggI8RqQ4VuleJAcnSVDm290iyP1Y_HCguPG_yMBktGKgmKINa7eaRp8KzZ_w0lD9dt2FCoY9A6UshEZNi2HJv2VluI_7H9HVSF9_qprRtU3EvTY9NUxQLte9EjJm34T520CYc_iFkrgbeHG_xTDloLbUMh403unXxwMf9FiQGFvOGhpTtj-T3DVQL55htIrauipAP9t80ciGxcjw8Qu_hnX_5_rbbsihgKrZTp2tbYP4dQulyDH4cfCIXnGZh342NcU9eRm95vYrYvaYUn8_xjNvwd9XyFFQJ9Xr6wPwjq30pGqho0diLAXlT3xzAigKFc_z_oJq8HMTzkyi0BQEeE9RyIsZSznwdzxhKsqxiTduLxd55-sDNeqleXFpMZlNcEeCeIiz9A4NxAmyoPsRYylcyTf3iguAUBJrH82S96klHbZWaGfOZPNj-jHKoBSCNz2_n6gcesEEuSoJuAHKcqFtpMcLI2rJS0GKvxXMD-52QZFDFsUhrILbieItVtG91ekA2AvZBKWUQvl5upg9khTbnE-bisiSK-aBJr9hMKm_m3F6BTVUEImiw6UCCo29cvVmrnxxidI7CCpQxOgBjIlNu6E3cpxO3Ghuk8cfATzTx86WKTzjj3pl45zjrpvVIW5CvKINHomfGzKPbHE4E7eQi1kcIyM26uA_WhSRuHGMhC6xzb6ek4T8JpDdyYTyq_8wBUD_raQGX0L3HumqdyFUVmDVQJ1KGKQmeYuj2_ooIQg_lEs76C2QtjkTFaop4Y_RbsO14CfxmS1TQD2tY-eSxIIR8feUkBsXcre9MOlsu-45Yj7QCs_PBcnA7DV_ur7yfUMdKDLgAJ8kO0LDDopXYsCJ1UgBnMcooFBuIjAbJ72wDUPSNTPMPt2axhSJw2d4rIEc8vDv32Y9Z5jkGyUVVYct-3c2U4NddT22b6GgKX7-cbhu4-ORy11gxjstQyWW5oM60fjOg1gjMk8Ar80zOlv4o4qd6mXIFswk4vD-fmJUzJjS3Nx0ENmDa9eH0szmUd9SD8w99JxFphkRcoeOQ8z-jNWa6YSpdC5W72xxEqpvWk58DiYQp4uSzQ6HCp3U93QnWqZS4GCAUXHN-eNsnYx8dSkbyOwjtph0LwWaDeMqDyJAXmFPenRSFIlD-A5oc8-uX70ihQ8_CyFTFtNLcW0PILm05xsjMVyh9fNCO-L6W4PNW-G92Cy6ZZTvs9Vd6Zj9Zq8DUdkRGGcHKurnBKdi-aliBaak0nllrbAty3KFyUKLTVaz5fFi9HE6LyCBCLY8H0IjhuNB7TSSZ_miSqLGQYlfJKw_zyWQDEJ-bVlyrwcUQ-__3uZ_difUeVe5wRWzYECrekbCcwv3oqhJIju5fcFmE4eKAn9Fo61f93EKsZxI-TZ0jkoI-oiZoxHYUOIfRdJw-7hsy_GT-iaCkEz-Z4T_AZXZD5mCABDjmBxmg2lnhxdmnKYhfOpCMBRs1hkDVtgUqe-1x7fj8Dv2iR2COSEWYmV-U1iSIpGGWpyoHPe6jYDwE8qJpWrOFKM9qvbg_tQ
+2025-05-01 22:43:31 - Accept=[application/json, application/*+json]
+2025-05-01 22:43:32 - Response 200 OK
+2025-05-01 22:43:32 - Reading to [backend.service.CaptchaResponse]
+2025-05-01 22:43:32 - User logged in successfully: saman@gmail.com
+2025-05-01 22:43:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:43:32 - Writing [{id=552, message=Login successful}]
+2025-05-01 22:43:32 - Completed 200 OK
+2025-05-01 22:43:33 - GET "/me", parameters={}
+2025-05-01 22:43:33 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-01 22:43:33 - User session found for ID: 552
+2025-05-01 22:43:33 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:43:33 - Writing [{email=saman@gmail.com, fullName=samann, id=552}]
+2025-05-01 22:43:33 - Completed 200 OK
+2025-05-01 22:43:33 - GET "/inventory", parameters={}
+2025-05-01 22:43:33 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-01 22:43:33 - Fetching all inventory items
+2025-05-01 22:43:33 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:43:33 - Writing [[]]
+2025-05-01 22:43:33 - Completed 200 OK
+2025-05-01 22:43:44 - GET "/user/552", parameters={}
+2025-05-01 22:43:44 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-01 22:43:44 - Fetching user by ID: 552
+2025-05-01 22:43:45 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-01 22:43:45 - Writing [backend.model.UserModel@482cd2d1]
+2025-05-01 22:43:45 - Completed 200 OK
+2025-05-01 22:43:52 - DELETE "/user/552", parameters={}
+2025-05-01 22:43:52 - Mapped to backend.controller.UserController#deleteProfile(long)
+2025-05-01 22:43:52 - Attempting to delete user ID: 552
+2025-05-01 22:43:52 - User deleted successfully: 552
+2025-05-01 22:43:52 - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-01 22:43:52 - Writing ["User deleted successfully"]
+2025-05-01 22:43:52 - Completed 200 OK
+2025-05-01 22:44:17 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-01 22:44:17 - Graceful shutdown complete
+2025-05-01 22:44:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-01 22:44:17 - HikariPool-1 - Shutdown initiated...
+2025-05-01 22:44:17 - HikariPool-1 - Shutdown completed.
+2025-05-02 11:24:49 - Starting BackendApplication using Java 22.0.1 with PID 3872 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 11:24:49 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 11:24:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 11:24:51 - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
+2025-05-02 11:24:51 - Tomcat initialized with port 8080 (http)
+2025-05-02 11:24:51 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:24:51 - Starting service [Tomcat]
+2025-05-02 11:24:51 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-02 11:24:51 - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:24:51 - Root WebApplicationContext: initialization completed in 2121 ms
+2025-05-02 11:24:51 - Filter 'corsFilter' configured for use
+2025-05-02 11:24:51 - HikariPool-1 - Starting...
+2025-05-02 11:24:52 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@499ee966
+2025-05-02 11:24:52 - HikariPool-1 - Start completed.
+2025-05-02 11:24:52 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 11:24:52 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 11:24:52 - HHH000026: Second-level cache disabled
+2025-05-02 11:24:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 11:24:52 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 11:24:52 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 11:24:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 11:24:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:24:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:24:53 - 
+
+Using generated security password: 7ac3dc59-b60f-404a-8017-e6741b5cd2cc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 11:24:53 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 11:24:53 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 11:24:53 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 11:24:53 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 11:24:54 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 11:24:54 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:24:54 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 11:24:54 - Started BackendApplication in 5.277 seconds (process running for 7.07)
+2025-05-02 11:25:01 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 11:25:01 - Graceful shutdown complete
+2025-05-02 11:25:01 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:25:01 - HikariPool-1 - Shutdown initiated...
+2025-05-02 11:25:01 - HikariPool-1 - Shutdown completed.
+2025-05-02 11:28:40 - Starting BackendApplication using Java 22.0.1 with PID 6608 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 11:28:40 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 11:28:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 11:28:40 - Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-05-02 11:28:41 - Tomcat initialized with port 8080 (http)
+2025-05-02 11:28:41 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:28:41 - Starting service [Tomcat]
+2025-05-02 11:28:41 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 11:28:41 - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:28:41 - Root WebApplicationContext: initialization completed in 1211 ms
+2025-05-02 11:28:41 - Filter 'corsFilter' configured for use
+2025-05-02 11:28:41 - HikariPool-1 - Starting...
+2025-05-02 11:28:41 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@42e4e589
+2025-05-02 11:28:41 - HikariPool-1 - Start completed.
+2025-05-02 11:28:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 11:28:41 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 11:28:41 - HHH000026: Second-level cache disabled
+2025-05-02 11:28:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 11:28:42 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 11:28:42 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 11:28:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 11:28:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:28:43 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:28:43 - 
+
+Using generated security password: 17bf2509-6b65-4cbe-9fce-f7cdb99ecd92
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 11:28:43 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 11:28:43 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 11:28:43 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 11:28:43 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 11:28:43 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 11:28:43 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:28:43 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 11:28:43 - Started BackendApplication in 4.036 seconds (process running for 5.062)
+2025-05-02 11:28:48 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 11:28:48 - Graceful shutdown complete
+2025-05-02 11:28:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:28:48 - HikariPool-1 - Shutdown initiated...
+2025-05-02 11:28:48 - HikariPool-1 - Shutdown completed.
+2025-05-02 11:33:25 - Starting BackendApplication using Java 22.0.1 with PID 17236 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 11:33:25 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 11:33:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 11:33:25 - Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2025-05-02 11:33:26 - Tomcat initialized with port 8080 (http)
+2025-05-02 11:33:26 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:33:26 - Starting service [Tomcat]
+2025-05-02 11:33:26 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 11:33:26 - Initializing Spring embedded WebApplicationContext
+2025-05-02 11:33:26 - Root WebApplicationContext: initialization completed in 1129 ms
+2025-05-02 11:33:26 - Filter 'corsFilter' configured for use
+2025-05-02 11:33:26 - HikariPool-1 - Starting...
+2025-05-02 11:33:26 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43245559
+2025-05-02 11:33:26 - HikariPool-1 - Start completed.
+2025-05-02 11:33:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 11:33:26 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 11:33:26 - HHH000026: Second-level cache disabled
+2025-05-02 11:33:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 11:33:26 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 11:33:26 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 11:33:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 11:33:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:33:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 11:33:27 - 
+
+Using generated security password: fe57e07a-4f64-4c84-8871-6fc0da97bef4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 11:33:27 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 11:33:27 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 11:33:27 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 11:33:27 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 11:33:27 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 11:33:28 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 11:33:28 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 11:33:28 - Started BackendApplication in 3.593 seconds (process running for 4.366)
+2025-05-02 11:34:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 11:34:38 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 11:34:38 - Detected StandardServletMultipartResolver
+2025-05-02 11:34:38 - Detected AcceptHeaderLocaleResolver
+2025-05-02 11:34:38 - Detected FixedThemeResolver
+2025-05-02 11:34:38 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b7e4db6
+2025-05-02 11:34:38 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@d62feaf
+2025-05-02 11:34:38 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 11:34:38 - Completed initialization in 2 ms
+2025-05-02 11:34:38 - POST "/login", parameters={}
+2025-05-02 11:34:38 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 11:34:38 - Read "application/json;charset=UTF-8" to [{email=saman@gmail.com, password=Saman@123, captchaToken=03AFcWeA7HXrOAL8gAUJgZH62O6BCMMl2D9-D7s8Oq- (truncated)...]
+2025-05-02 11:34:38 - Login attempt for email: saman@gmail.com
+2025-05-02 11:34:39 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7HXrOAL8gAUJgZH62O6BCMMl2D9-D7s8Oq-aBvBwp_EPtRAFuCpSHKQzrpxIADvGEKNsMKHuq4NvrBjLLipJLuNfsXy3Uf-1O9fQFS3wJUslJCaw1ocKPoHh5TT-w8N_IokiJV2devFp6uHU3u3ypJDnk9fyGBlqlAfVD8svnZ8tkqKPBRWHm-CeXKTHg-JLG22ob5NaWOzqc-ZCHchobVKciZPEAPJ6RQMFviDZAH-AzNh0hE3QQqvWvsnUPZshWiWarSiyDkffEodRT7dohi5eLDETkBEGK25lLGBGoPrK8yeWQ_cnmO7a2avM0QcH_DWuMhI1--YLgnSaHVbPMtQ1CkrlT8rEp1sotmWUfl6M2DBh24sxKNBOvN_vQ-a3O3pMPcsb2Iyn5HSc8Znj5wC6NeyoLu2vzioYK3akyd9au-nPyS9m5guJLk6cATU3O_t9QYPOQigijXUVZTDhrDyRJvUIcnaCNl3jSzaxnaa3XZUlzuzqa4sXQvedTJUMAlXgnct9vSDBAaQlpe7mHzDx3IZg40b0R_L4zqzeEiB3qtgoYiaFeODwmq7RbA8auXwMixUYe0_isPJmihvQJX1Iv71iiHHFedN0SZEcn9YnYsYWcwD-QNeeqcVziTm7OX_6Z9FGDBvYU4V0TOG5VmNpoh0GXZRrls2ot4QhWWj9EGqZs-UbXyJyZqbQDg9X0IC1TJ7cY_F1lqwBT3En_248C9EuCgcBpwqNBWWKY18v31qmYep806-PJn1kN4C7DwtapXC_ODKS__lxjfjRBajwZJu7K3CBVc7jMR7Ydrb2ep2b2T-eTjq6qWIe28_9_hfskrGhlFusnuGDHW78Yc8V5bc1-IzF9G-kGVGfTnp6ITPy9SG8iFWHTjijzjhR0wVR8cGftz1Hp8YHtYGzs29pM4nWRa9Bhd5lZIPVO7CJuAbf1TfM0V9BNVyzO_qt5sTwc0Yz-W7ynJnckig1-MD0A3_GbZcVUr7WCPu6eO2Gxf0nT44LE5MTrdJqe1_3cb5u0hW5t-FHzJS1r_cZR93KMqiGEL0B_0MxV7rB-j5IoooHjlhAOKwY8I5HmhWFtYGWWE_1DrdEfdCLT5FdgyB38r4Fb0OApyMT5T6wIZQ94efg7K7-vA4TMDYj1u15VjI7TOObS1YSswml_ea1Wrd7xUlfVysFwRiqtH82kOA4OboRSinVD7I9fHK5PT0yG6zg-2hRVnkNVrcAhD654o7Es8UXXDFMOEVw7dUNJH39vUpGXrivA4uxwTVkt3vcUkcAUwcVtcSsruhXH58OBPkfAuIhrMxLK5FuVrnp_DshfP7_40JvAM1_-MT7FNAJICydMlk9yQTvESOF98PxJvTA9PG8jje2BRTApjhAd2gcARrLSmzgC4MaZisQq-TqnepTpBEnwwoBpiuVfW-D_ylV4XFHYG30bdXw1JVYaF1wdJKRUqjkSNF39cwx5CC7oQIug51zZfTEv0zcnR2rE9C-AzdeF-rlo2ABhRfwiZiMwk_hWImF-u3yA9tmHs9MoGnWECqr2647Kprtry_CjL1M_G3bPdVjw-tvXyeK-XXXMEXhoSqJmo-Gy7tififSH4ecxaqoGKkoc9S1B6wcFy5BRF1WTNYHNJKM4Fjqj3QpE9PhWoEe9lRaEqnP4t3lDFmeAxh3oV3TUadfEa_MnSI0XSPmTf2sOB3JPdqlHFLY4c4ZgbwDh3AhQ8IlWP2YdQZHKD5zBgGO3a5OaELGir1I-wt-nk-CzvfPIm-MYnRmjtgCrJpC6xBEdPLtMAXxTb3wQIpz99xXRZdKgbyOLc-wrBJ1jVSBIPB9FPyxYIHDxKQOnxLXM0H_7taj-GIBuBrqNol5ldTbvKNZZp1AtUVSkjW2u45NApCojihS8wji8LqZ50HmIYC56s5Id1WrmzJ7Bc8cwmFjMTPG8F12FrqaTnsrOY2R8QCyH2QZZ8PG1ClKvaHgXrnhXRQ3YVCcHifjVf3Zx_ovXfEKPypsJaigT8lKyFK0hsPGhG0Nz2BfyPnkh-n6wgkxL0Mxg9cHYvWhVxklKsEhx6HY08b0oH65LtlL8WmI3pnZ4S6y7j-xpHoEqRM_ngGmz8yg2VqFDG_g9WXoI5RDxOiRcV4nYuvhVMQw
+2025-05-02 11:34:39 - Accept=[application/json, application/*+json]
+2025-05-02 11:34:39 - Response 200 OK
+2025-05-02 11:34:39 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 11:34:39 - Login failed for email: saman@gmail.com
+backend.exception.UserNotFoundException: Invalid email: saman@gmail.com
+	at backend.controller.UserController.lambda$login$0(UserController.java:67)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at backend.controller.UserController.login(UserController.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-05-02 11:34:39 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:34:39 - Writing [{message=An error occurred during login}]
+2025-05-02 11:34:39 - Completed 500 INTERNAL_SERVER_ERROR
+2025-05-02 11:35:14 - GET "/checkEmail?email=dan@gmail.com", parameters={masked}
+2025-05-02 11:35:14 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 11:35:14 - Checking if email exists: dan@gmail.com -> false
+2025-05-02 11:35:14 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:35:14 - Writing [false]
+2025-05-02 11:35:14 - Completed 200 OK
+2025-05-02 11:35:14 - POST "/user", parameters={}
+2025-05-02 11:35:14 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 11:35:14 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@468243c7]
+2025-05-02 11:35:14 - Registering user: dan@gmail.com
+2025-05-02 11:35:14 - User registered successfully: 602
+2025-05-02 11:35:14 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:35:14 - Writing [backend.model.UserModel@468243c7]
+2025-05-02 11:35:14 - Completed 200 OK
+2025-05-02 11:35:32 - POST "/login", parameters={}
+2025-05-02 11:35:32 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 11:35:32 - Read "application/json;charset=UTF-8" to [{email=dan@gmail.com, password=Dan@123, captchaToken=03AFcWeA61ur8Uqy6a3opUm_qfyJft4wCUT8cpwpzL1CGk8 (truncated)...]
+2025-05-02 11:35:32 - Login attempt for email: dan@gmail.com
+2025-05-02 11:35:32 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA61ur8Uqy6a3opUm_qfyJft4wCUT8cpwpzL1CGk8MKebbx2NeGCDAwU7Yd0LyzbS9Xzg4svUBb_xK1O9CLVYcp5759xyR0NlW_rUxMulZ7LFwrSLQqhmAVzTpPhJKmQvjBkFqkD9rCVgxhZuIWqZMgXgkDLcCSv58EjK-Zs4omKOFqCT0fCBSstfHcuTV_s0vL-_5BXYDq48PBvyiqfel3OErUPeTdZAfN2NaRUhDb03R4kRHXqsjSMpcMx3f-RTArP3l6So8d1VVcoBJfNW32Y5fiDc3Xj0LmVRWCYKjN-3Tn7nMMkIVoJU7ZwQDQm4le2HMM64UOkjaLwd_Vrp6InObuEXNUZ8kEb78OKfbbsI_VKSxfWkWoPzrhmDVFtdKNQXkvylFkMLibEilRTIBzOYjQ6-g4f-qP_U9uJH0P39l7EjVFo5RPyBL_jmtK1_V41YVvyabkbJSq1klkREmjhIaW_clOl_6rAceup1XT7Ku1bPocdX3O_NXv6Rm4kTjb1Cll6iLMcYWsWEgxApIBennzHtgT0yMCQNhPP9FI6NnSSYaEI1TNdPeYuXWwMzbi8qWuAMmBZihd6rF8iXZ5NtuntzqnJuZClxcwXz2KK_9jBSilhKelmLsR0RTU4E__tRlTbMwJDd9uxRp_n611MHKS-36_3XVrcPE2aXRThU14RbRKls73p7YFeqhn44oHIOb1u6b4c80CkckJMFbgr0wmmG0Nc0dBCDnF7mopnFU-TbQlm9E9BbOTEMgPUu_lVgza2ezMMoCvxD_Cq9BQm_GaZgCdBTPakdiG6npCFJw5MPVrQSRYAJ70GYtjOAAwNDdFp47gq8XjVsuFzJWDCrenH07JLWj6z6Cj7SeBPlkprJIZywquc25btALffQbw3gOsUR5xJ0YEIs6yKn4JFUwFIF5liUnUOOyJ2WvbWNMLX35rAMikAf5-8piVIcsG3oXvXw5s3GjLRa-kGdq2H0POvPxIlpHO_e0w4xyfaZBAl8kRFES-L-pL81KfYsPOgH1iLA_YHV3_normbbKb6JWWKE1DSKlHDrg-liniAHOrhjZd8gE-3UfSlaEQd_YfCXhyud9ZEAZia_UX5dQjbTk7DyEmPD3E5aRLCXITrgJhXZ7ZAfWq38QgejNAnywlf-4klzZ_90ccNVztMl71D13cGzeDtdT25hf0WrG1pS7F3sxmK4r8TA6mBssYcV3e_3YdP_PEJ65NwDlYE84Hn-7DWbty9gDbxiVjmIMq5fszNlLE7Dma3l-jmciCPW1AO6hdGjOl-kw664fpHNg9eMhfk2QP6zQAQyjMKR2lDNHBJ2L1rg9KfeaVMcK1S_ssIKwT4vTCsC-e5iAhflNLX1Qu4sUkpoOc_MMbpoW4axs4EOqelFTIFSrUx680Vutxy7xjlsqAw-10qPVyEgpvb_mF_JZFZ2eqzatx4xC89fxfLhx2qFaiim0pigox8XZ8P-wTGV2VMXfplr1geRa72CniYns4DzcYYuZ_ZtdkouDOsMYPpDpsHyH97A081RBKP-uxyi7mcMSBefEx5X-HpwYRG80xZIPCfPhaOnFurP4xZTfiOC_lWvjQe7SIUxbPaQPB4DY9uYnlCTxbYMrq0awMTu9GiGbj9ymHXS_578CCHFdEIn6Scyt-mHmmiZIemwdfz-sq7mH0li48-xQ_U5aytbc8pDcXCMOIbDAj5X_plSuMqf7Rbov_3UsxyKKetGS6yX1edwGIenbVEK0I2X2K9TSTwp984GL3zWStBwT_-xkrPP3Roh24n3hz7FH849YEA6QBqGjaYgfmJdCInLjjUSHjrhxYaaKZ6ajf7GRgEEn2NM2k7tUgpnX9BJ3tHwCIlQxYxJHFs--It4FEzCCfo4bVozbHMHnQypzH0xpBENlaqIE0-MQKEZN_cejKpOlGKmYBpP_i8-5bczoeoNcVms5j41hD_6LWEB2D4iPuyj4Q9c1bg7ezpf5IPd--N4OvPgbzwLKXMCmp8RT9r4U1XJLftpMu2lGCPJwoHTIubl1xnlWF8Ou_tXHoXgNpr7WT6QL5RvHImhmV1V-fVisaDLj0SIN5KykggZuD2bS3h_Pe2BIt0uYwjzUikDaslhB_sR69irmv-LkVYRx-GCVF8NdZAFj0AvrDWIqjeO9QdSlQ
+2025-05-02 11:35:32 - Accept=[application/json, application/*+json]
+2025-05-02 11:35:32 - Response 200 OK
+2025-05-02 11:35:32 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 11:35:32 - User logged in successfully: dan@gmail.com
+2025-05-02 11:35:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:35:32 - Writing [{id=602, message=Login successful}]
+2025-05-02 11:35:32 - Completed 200 OK
+2025-05-02 11:35:35 - GET "/me", parameters={}
+2025-05-02 11:35:35 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 11:35:35 - User session found for ID: 602
+2025-05-02 11:35:35 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:35:35 - Writing [{id=602, fullName=dan, email=dan@gmail.com}]
+2025-05-02 11:35:35 - Completed 200 OK
+2025-05-02 11:35:35 - GET "/inventory", parameters={}
+2025-05-02 11:35:35 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 11:35:35 - Fetching all inventory items
+2025-05-02 11:35:35 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 11:35:35 - Writing [[]]
+2025-05-02 11:35:35 - Completed 200 OK
+2025-05-02 11:45:32 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 11:45:32 - Graceful shutdown complete
+2025-05-02 11:45:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 11:45:32 - HikariPool-1 - Shutdown initiated...
+2025-05-02 11:45:32 - HikariPool-1 - Shutdown completed.
+2025-05-02 12:48:36 - Starting BackendApplication using Java 22.0.1 with PID 14888 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 12:48:36 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 12:48:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 12:48:37 - Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-05-02 12:48:37 - Tomcat initialized with port 8080 (http)
+2025-05-02 12:48:37 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 12:48:37 - Starting service [Tomcat]
+2025-05-02 12:48:37 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 12:48:37 - Initializing Spring embedded WebApplicationContext
+2025-05-02 12:48:37 - Root WebApplicationContext: initialization completed in 1381 ms
+2025-05-02 12:48:37 - Filter 'corsFilter' configured for use
+2025-05-02 12:48:37 - HikariPool-1 - Starting...
+2025-05-02 12:48:38 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bde57ab
+2025-05-02 12:48:38 - HikariPool-1 - Start completed.
+2025-05-02 12:48:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 12:48:38 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 12:48:38 - HHH000026: Second-level cache disabled
+2025-05-02 12:48:38 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 12:48:38 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 12:48:38 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 12:48:39 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 12:48:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 12:48:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 12:48:39 - 
+
+Using generated security password: 52088a51-2e3b-4126-9c0d-7caed5dd7f7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 12:48:39 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 12:48:40 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 12:48:40 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 12:48:40 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 12:48:40 - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 12:48:40 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 12:48:40 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 12:48:40 - Started BackendApplication in 4.644 seconds (process running for 5.73)
+2025-05-02 12:53:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 12:53:46 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 12:53:46 - Detected StandardServletMultipartResolver
+2025-05-02 12:53:46 - Detected AcceptHeaderLocaleResolver
+2025-05-02 12:53:46 - Detected FixedThemeResolver
+2025-05-02 12:53:46 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@80b70fd
+2025-05-02 12:53:46 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@332610ad
+2025-05-02 12:53:46 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 12:53:46 - Completed initialization in 2 ms
+2025-05-02 12:53:46 - GET "/checkEmail?email=sammy@gmail.com", parameters={masked}
+2025-05-02 12:53:46 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 12:53:46 - Checking if email exists: sammy@gmail.com -> false
+2025-05-02 12:53:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:53:46 - Writing [false]
+2025-05-02 12:53:46 - Completed 200 OK
+2025-05-02 12:53:46 - POST "/user", parameters={}
+2025-05-02 12:53:46 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 12:53:46 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@74cf28a7]
+2025-05-02 12:53:46 - Registering user: sammy@gmail.com
+2025-05-02 12:53:46 - User registered successfully: 652
+2025-05-02 12:53:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:53:46 - Writing [backend.model.UserModel@74cf28a7]
+2025-05-02 12:53:46 - Completed 200 OK
+2025-05-02 12:54:35 - POST "/login", parameters={}
+2025-05-02 12:54:35 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 12:54:35 - Read "application/json;charset=UTF-8" to [{email=sammy@gmail.com, password=Sammy@123, captchaToken=03AFcWeA6R2eg4VXKJx9DVaLhW936wXg_Y7fJUYEm7H (truncated)...]
+2025-05-02 12:54:35 - Login attempt for email: sammy@gmail.com
+2025-05-02 12:54:35 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA6R2eg4VXKJx9DVaLhW936wXg_Y7fJUYEm7HSz2MUPyNmGDhkCgio_xFnMmWj77umd5mbHU_VJTg4i8i4xRaqV21I7qLn9Z4_x3K_78mi1LVQdDKags6c-Hga7r7bsZ6Cga8tRJH0WuBObhXA8sNK3mrCOYZpDsdCkBpcc2EdFyf5-dsNe5hCHv-mRoDpd4DWwW-SN01JTgcgws7sqGycXA1oCFyf0l5my9P92IcWeKDO6dkOleetqlotJTN9lzyAUYvw7T-jwiH9kaKbsDAllOoUe_dB6ieN9VI0pOacOgjAw5RneaKh5Z3yVvhgRNMW5lGxiqvzNUZndqjRbZG-ajmcxc0MmkVz7JE_mRYjtb-Gk40zzB2ZzdEBVwM1mzceRyYe_chMzvDAIwLr4RTDuDFgotv1AyGTaJ6Xyrwa7Ax_b7q35aadZcrdDUlaPRCVv_V_J9PhqEECaANe5VfeWl68KsiQe8xt5mj0eY3RJHIz57AqEx0Yo0kodQsVK6QpToNZ9iwya6Ckg-HxES3JayvTyfDCPhbD5EmWZrOrmN4zvzQjBbuJ8ohxvNggxwzFo_enj7_W7esbkVek3ln67uErXdRSq6M4J1TBzerlXbbGjXbp788rOoQJ6yEalGQJllzTyEwZ-d7SI8PgcKDbHtPbDBJ-BIXeojZaahLs4nacCI2FIflvY01edtDhFqHncaxS7ELMMOsUhVdIbIawjupqD_tFLKVCwppEeW_xKLoyPhv_hCGBhoIUnVpiMN3erFIJ6cyTVjUVlk-q55tBErklZ4sahfiUYmVfgG6ijErHmDOlEBCsW5a6gkPrLn0YkIwKQoYImClLCjDoZHe9tVQ1MZPYfQyDcqi_NoGNte0cWMkHWGec7ca8ktaT9pei8YJ17OiLhFhRbikRTxhtagNhi67CsfD32fVByQfJoErAYetPN6rKk2mREIN9OqvynBeuaEEBwf_1SzR1eivyOAsFjtFOmBV9kWiZGhSiucPOVtYxYS5f3oXrHEJrFLZgQnHGQYAxwC23_6mQAiJm0cUrPnbBRylyE1zGkmBP2Gtzam7SmRgjwQEnZWQjb8jSg41qnFgzCjsJmL8e6382vyegl6joFK-qjCiOIuGk3hxlMGFaUI_EyUKBI0c4Zw7nkjttjpvxNqwjdASUZ6q-JyhJAIidApa0O2VV6rtLZrZo7sD6zhtu7X67cAg2v--4j1LiQMgBU-JEjAodI51kv4cgX9vRqMXbJcP66uAjOgmYP_AAa8oCx_2fJ-Jp0LJCh3Lpa6Bb1hKv5na5al83Wi8hd1sXHFG7lGDIuJcZ42S8RIPkevfaXb7c_1ojDzTaRHXy2bU6MTneArgHMXwUIHmQ7df9IiLDV12Gy5W7K-ONULMt81DxvzWlLeLbt3lVHCg5vS01Fi8L_60HbAYoiyE-nguSbE1hcRBwqe1JbOqaRZEnbu3DgtImMApOv7puQipiHVF2XvZNy7qjolnmq83ebHB16jBqlE9NUGzZChGfXEVU5lnEfLgRMU3gr1lvjvG95dIqMhta8NqumfXSCEBfVlA73Ty0ERctXICC7cIXX_B3U2zvLyEXPXkMieEdQcwSIuJHZOFGNQYL6S4Fwzj_F9E2xML2Rd8GPQR9USA1iQFK-DtBrFJDdq2EesLozZ4v4AwbXYzB3fhhW0-gmNyMq3DbuEhwu35adWJL03wCqiVlHjuXkr37yQ8Xk7ZTTtD6I7EBZQhnk71ApiDnhFMWtYODk4mK3nHFYnhKbEmufTYA3cGnqpOUhQErVZBgbk6dgJt-G_xfvwuJo1NIfuh0pI2wnZlwY79yIVMTizVGXtTrQQ8Gk5KZ1EljwsIeQ1k_QtZ2RgPZoksBGzubWNVfEzsbBligGgVcITz6slF3MV7b6LNSP50ncWwJlOnxvkModEMS_bo_Fsj9HXuIekhZYKoS-Y64haX_z9NR09cbIPdvCqQp6qgNVFGkojU5NuzqVo6hoXMSpljJd6u5-R416Z8bDRjNP32GFaFqu_haQROIn0FkODHsGldotjFDlYnmHsfL37BWqaSkwtZv_n-rnTy_O31M3dwbNUKqivDfHWACkSq-QzK__HHQVuxVjZXV7O1eZM3SNJ4LjRy9LlQh2UbtgWdpcwUFiwWEzpWLqWB1Y
+2025-05-02 12:54:35 - Accept=[application/json, application/*+json]
+2025-05-02 12:54:35 - Response 200 OK
+2025-05-02 12:54:35 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 12:54:36 - User logged in successfully: sammy@gmail.com
+2025-05-02 12:54:36 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:54:36 - Writing [{id=652, message=Login successful}]
+2025-05-02 12:54:36 - Completed 200 OK
+2025-05-02 12:54:38 - GET "/me", parameters={}
+2025-05-02 12:54:38 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 12:54:38 - User session found for ID: 652
+2025-05-02 12:54:38 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:54:38 - Writing [{id=652, fullName=sammy, email=sammy@gmail.com}]
+2025-05-02 12:54:38 - Completed 200 OK
+2025-05-02 12:54:38 - GET "/inventory", parameters={}
+2025-05-02 12:54:38 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 12:54:38 - Fetching all inventory items
+2025-05-02 12:54:38 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:54:38 - Writing [[]]
+2025-05-02 12:54:38 - Completed 200 OK
+2025-05-02 12:57:15 - GET "/user/652", parameters={}
+2025-05-02 12:57:15 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 12:57:15 - Fetching user by ID: 652
+2025-05-02 12:57:15 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 12:57:15 - Writing [backend.model.UserModel@6cb2e901]
+2025-05-02 12:57:15 - Completed 200 OK
+2025-05-02 12:59:12 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 12:59:12 - Graceful shutdown complete
+2025-05-02 12:59:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 12:59:12 - HikariPool-1 - Shutdown initiated...
+2025-05-02 12:59:12 - HikariPool-1 - Shutdown completed.
+2025-05-02 13:36:10 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-02 13:36:10 - Starting BackendApplication using Java 22.0.1 with PID 10676 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 13:36:10 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 13:36:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 13:36:11 - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2025-05-02 13:36:11 - Tomcat initialized with port 8080 (http)
+2025-05-02 13:36:11 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 13:36:11 - Starting service [Tomcat]
+2025-05-02 13:36:11 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 13:36:11 - Initializing Spring embedded WebApplicationContext
+2025-05-02 13:36:11 - Root WebApplicationContext: initialization completed in 1275 ms
+2025-05-02 13:36:11 - Filter 'corsFilter' configured for use
+2025-05-02 13:36:11 - HikariPool-1 - Starting...
+2025-05-02 13:36:12 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2506b881
+2025-05-02 13:36:12 - HikariPool-1 - Start completed.
+2025-05-02 13:36:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 13:36:12 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 13:36:12 - HHH000026: Second-level cache disabled
+2025-05-02 13:36:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 13:36:12 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 13:36:12 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 13:36:13 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 13:36:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 13:36:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 13:36:13 - 
+
+Using generated security password: 54740066-0e3d-4f21-87b4-3847b0f9992f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 13:36:13 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 13:36:13 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 13:36:13 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 13:36:14 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 13:36:14 - ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 13:36:14 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 13:36:14 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 13:36:14 - Started BackendApplication in 4.355 seconds (process running for 5.594)
+2025-05-02 13:44:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 13:44:44 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 13:44:44 - Detected StandardServletMultipartResolver
+2025-05-02 13:44:44 - Detected AcceptHeaderLocaleResolver
+2025-05-02 13:44:44 - Detected FixedThemeResolver
+2025-05-02 13:44:44 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14c7ab73
+2025-05-02 13:44:44 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e4a6afd
+2025-05-02 13:44:44 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 13:44:44 - Completed initialization in 8 ms
+2025-05-02 13:44:44 - GET "/checkEmail?email=damith@gmail.com", parameters={masked}
+2025-05-02 13:44:44 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 13:44:44 - Checking if email exists: damith@gmail.com -> false
+2025-05-02 13:44:44 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:44:44 - Writing [false]
+2025-05-02 13:44:44 - Completed 200 OK
+2025-05-02 13:44:44 - POST "/user", parameters={}
+2025-05-02 13:44:44 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 13:44:44 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@975529]
+2025-05-02 13:44:44 - Registering user: damith@gmail.com
+2025-05-02 13:44:44 - User registered successfully: 702
+2025-05-02 13:44:44 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:44:44 - Writing [backend.model.UserModel@975529]
+2025-05-02 13:44:44 - Completed 200 OK
+2025-05-02 13:45:09 - POST "/login", parameters={}
+2025-05-02 13:45:09 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 13:45:09 - Read "application/json;charset=UTF-8" to [{email=damith@gmail.com, password=Damith@123, captchaToken=03AFcWeA7KnQ1PCeFZyfzhRhRKJ2PqD9iAvMDm2Ob (truncated)...]
+2025-05-02 13:45:09 - Login attempt for email: damith@gmail.com
+2025-05-02 13:45:09 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7KnQ1PCeFZyfzhRhRKJ2PqD9iAvMDm2ObXbIWp_JQBh8yU7psmUyNCdnHe8Hp5or6As579Rcn06qQ6YHGjZ0vxOCrbwum_5zkqDBOFaslbDZs7tKeOlTXqRVLpWPTdSgQmTe56be_O7X-Bkc8NiLPGZ356_CS6uUn8u4szAq_UCyGCajX1AmxwBYMSykzkO885Q7Iiguu1WFLyFX1Dg3MtOeaENIeeD22ogvR-SOr6_D2JEMt7OTo7fW3tGpcRop6cD_1F23wvIaFLJaRS4C93SWTAqdy-D26sIrZhlJ9UID0POK_jMcazKJ0cVlBJerHcTBUkcZKmwov90VN2VGryaOVTEGvKkmTChB1j9-1TuINE_kZBe4LZQpsoPl3hnDt2wIif-jNjt8BSiOT6yRKGlfDbzUIZf6oifOqMZQDTGgYoU8kORr_5UPKhCsaL7EXDaCI6d-YGxe4fNpQSAb69nZQsbQpj_8h3osnO3mbMWk0p-L8tZ3Zuylo44f7F4ey-3IzzgxAXYt7HOTlpmHvPcZ6yr4cPiXhgCbFiw4j5GluFBb52gpyZNnYd1npTaIouUgF_wgjRvnx9CIui8XFYYtliVecHSSfgZdgF77bfwWoEYKNVat0nEhQd41f1uHZ-AAuJGc-RaSGn1fsqB2tM-jo2NomUYomQtPEflM9wZRaDBIcdpQAjIbPPXKJ5-LyzRBufKYiWW5tLKBm3YgK6IYp094nC7GW_lucrgTYR5ZXBVZjVq1T81GUDLHfFVyOemsycMaV_605wKChuqW3bKP0WhhPgCZATHLD6CR4as5W84k3Z6fP_ZQokkti-FrINHzVWojAza4WSGd1ybTTTQ58YRyO_-gZn5_jYFUypEDpaLlWP5XlOprE9EKPK2614onYrmwb52dfzabQCp-KGA6U_WoHB7H--aXSO9ZO-nUJU0ZglmER_szrila7aXCPf56pCDTsu_EfJXGkr-xMXr0CttxXdlobpy6hHgYHmOTZ-78XiIWw1bUL0f4aNhalALQxoRovEaPR-ZILBHGp7Fre_4bg-owTd1w_8SJmBBg31bmNO94H6Xa4YcUV4h3SYyamNxnwjjgvv7PkV4GrkegOSDckHt7HRSvt5iuwwbux4IZP5tD1PKBZeZKmT5lqZsVYV_V4eQsRab6J_oVnyDDRkXdeRhZDyoTTLEH9RVG_M-P9-gJrhZj3DoccQ3K_cfISFoZOLvemlOsI1OIdHVRrF56M6--BnzvBzIDC2zuhC1vxDxYFG0IN-fyYWuzV6rc5SDbCSu05n8jKCRQ83HlhIh2Z0DcADIBrb-MM2bLrcIDPyNpzGLq5EhpTlHpV3nmWt4QS0__lvN8DVAJMs5EPjtENW6wmP-eo7Ij6O1RtqSqRYys1xpxcBGrJhg4sYxRKlDGPqwh-ye7pIRdPy_Bf6x2-bq2UfNnL3COibsNGtrhKgrk83Wvroxz0cOloWlLmseMcLtOP6Igr1HVrk7JBfBq3d7umVpY4G9IwZxECOZaaf3s4P2EU9hHV9jgrPt1v9iIeBYSmLJRgN1qP2lgoCS2DUGpeIxzU37HCk-nztjWmVpogdoroX7vQV3OyeXP8WjcNpAOQK5CAcPxN8oAly67aNfBdDXOk5_754YAvdQMmXREm8ouTW5xxrN-2isJ0mlbaRKwMDsrTCaVNQ1TK8nkFc9GM1zLpjiuOeCfpDDpzXr77016UH4EyJ6Uhx4hQiuEc7WzmLc5TS7P0P-dG-d8MgFbyPilsx9Osnp0X3J8NovAUxwubbzxS_AN_27mBa8YHGSH-PvTGJxgU9UQe2jdBcpIPFCt-nCr5N5ygzHlZaPKhumzf_GVR1UTr970AMx_sCLIn3YTppL79xdy-2A4GoZBarPxtFu6BioHm2cZMo4eWUGux1dzR6l_FEI-GIg0k4VMIySbbWkT7A82-o1CUWzLk19RJTRFIz1l53p7tI8el30YJYxx-onnbK3_f2_Hyr0FtMdsVWe7bUUTI2EY_oSIdGdmisJ-ZwJlyPq6W1igLK4VdvfWdmJIHBvl-nn9aoU7corHM4AVbvmDPOyVesJoH8HpAb5vGsXbi9jvDh7bLQQitUfWbwm7ZrSpHwYGXUfmv7pdd3X85db0k43g
+2025-05-02 13:45:09 - Accept=[application/json, application/*+json]
+2025-05-02 13:45:10 - Response 200 OK
+2025-05-02 13:45:10 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 13:45:10 - User logged in successfully: damith@gmail.com
+2025-05-02 13:45:10 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:45:10 - Writing [{id=702, message=Login successful}]
+2025-05-02 13:45:10 - Completed 200 OK
+2025-05-02 13:45:13 - GET "/me", parameters={}
+2025-05-02 13:45:13 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 13:45:13 - User session found for ID: 702
+2025-05-02 13:45:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:45:13 - Writing [{email=damith@gmail.com, id=702, fullName=damith}]
+2025-05-02 13:45:13 - Completed 200 OK
+2025-05-02 13:45:13 - GET "/inventory", parameters={}
+2025-05-02 13:45:13 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 13:45:13 - Fetching all inventory items
+2025-05-02 13:45:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:45:13 - Writing [[]]
+2025-05-02 13:45:13 - Completed 200 OK
+2025-05-02 13:45:56 - GET "/user/702", parameters={}
+2025-05-02 13:45:56 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 13:45:56 - Fetching user by ID: 702
+2025-05-02 13:45:56 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:45:56 - Writing [backend.model.UserModel@77ad379e]
+2025-05-02 13:45:56 - Completed 200 OK
+2025-05-02 13:45:59 - GET "/user/702", parameters={}
+2025-05-02 13:45:59 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 13:45:59 - Fetching user by ID: 702
+2025-05-02 13:45:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:45:59 - Writing [backend.model.UserModel@478ae39f]
+2025-05-02 13:45:59 - Completed 200 OK
+2025-05-02 13:46:11 - GET "/user/702", parameters={}
+2025-05-02 13:46:11 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 13:46:11 - Fetching user by ID: 702
+2025-05-02 13:46:11 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:46:11 - Writing [backend.model.UserModel@1071fe24]
+2025-05-02 13:46:11 - Completed 200 OK
+2025-05-02 13:47:08 - GET "/user/702", parameters={}
+2025-05-02 13:47:08 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 13:47:08 - Fetching user by ID: 702
+2025-05-02 13:47:08 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:47:08 - Writing [backend.model.UserModel@449b02cb]
+2025-05-02 13:47:08 - Completed 200 OK
+2025-05-02 13:47:34 - POST "/login", parameters={}
+2025-05-02 13:47:34 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 13:47:34 - Read "application/json;charset=UTF-8" to [{email=dan@gmail.com, password=wd, captchaToken=03AFcWeA4WM--gISMhedv3NzE2tGYwkjK1iMY1AeZbvP3_o0cI1a (truncated)...]
+2025-05-02 13:47:34 - Login attempt for email: dan@gmail.com
+2025-05-02 13:47:34 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA4WM--gISMhedv3NzE2tGYwkjK1iMY1AeZbvP3_o0cI1a-hNYiH-4AAF3gKC6ZbGdZK54rfeArEB3SqDlupAn0eAeZkLQ3RPLG3xCg2iJLEvdBSOt2szbXJpA8B8VdIcfdzcGM8LV8QcP_YJqeRT3Uf-Ccxb-jEHSthrB-2-K3vRkFlcCZN1Ni9MNi866wRGe4vnQMw04tGirTvob02fpdQ4aHXFfAOGDCJqajkFPZvi4KHn4zR_yoCWfJr15L1hTqxDpbqSst-X5tSqVejCLyY1KzPcDOwGgqAy-zbERAXxbzMntVBI7GfmB_aQoYt_c-UqTbEMSLjYFSFdi3UkJVMbGyi9HNGLRB0i0CFd0Ba85CO4wytQhW7T-I3EH_40obtVr4O-GrWYmRWvpnS_kyPicAVPcOXJ-grFUcvX5XjS8C2B6Aa9QYsF8ifQUfZkc8aR-Cm4ZF6WHDB5shKcWDBi4lJqjryDPy0-4vEoTDOgfiLcGHE2yonX1qysb4Q9YWayMcW2W4uICa208PVqCp1UF5wEJf66wSehEtmTYw2Pex1gNrWCY-bKWod_8UrpHxQspqznPQGSIu8OUlKjaepOT16ZSu-i3gA8FW7VYaH9IQBNtmFpHs8Dem6GlmpZFzTcNKhM63SIBm4FU45MW3Plvge609NnuoPdXTQbAYcyuO-UYYbYN78JW3ipyqsnE-g-FwfO82aQoPYLOHRrxgB7B5164MZMB_Bii4LiXTJZGKBwWltMACC9l8Rk3KQ13xRYPZCaGdFzIG_dpfTeiuxvMVOeRJBb6i35KBdbEhAtGcEpYGzVTdqEDBamP7dbrrq5TJqBb_rYoAUcq19WoStYXAkESgBx7BXR74mLIqKpky9rVumBY1FHDV_WaJrSminuiTultYm4Kx8a798EtyLJng9T3dq_tctYFdG_3RXQIcqRwNhifJH6kAV6HHPpobdfbhsSfCYeDa_rHyryxBRYZRaA1v1jxnseIDdwczv-ZuCP2fjVwOFj194zHgYphAxJjq4Mnk3SEsBsABrJBxWtYuyAyrqjSFGBVvU9FuZ7GY_ty4SfZJavbl5zsLlc8tekwDg7ZzLXljR5cgct6SnlLCzQtr02wtT_meZi0nWfREC9tOxCjL1K3wtlMK8z-4okJ_IvT2F5sjJuYknGVjcn4sYHlevXZ8sw6G7ViUf5k_XxESGR-kaZBux46jueuwTxWuW-hJ6ZaR9Y51w__bjsUor_V7X3DVRU7wGyxIJr0v6QDm-esrRnF55M3vh3iCzgdx80SMQ5cfhytnOeVrW61Y4rLkXGA_sfq-aV2rUBVr8Q3nE40Ed4LKsn_LXeVwrUB25PjrmGesRtVxJKCappcCBbLzcRz3ccd3fWZJSKoOkhD3eHHKpa_SxN3w_NvHxTm2yrs7YazgJWctbmdpuOA3ZAuPEuwpuc8FElprelLMqq9OriEXfA8GWY2jkK9EDDvx1u_xr7gyxDohiTR61kZJFaULnKjTjy7PbW0EN4BWQVdUZnCQYqFFuMn7HaD4qR20mdLQAbleRltivRKdlZad11j6xMV8Bvdzk8gASsViz1L-4iy5WYAmp3mkISU4vyfnld59rZ9qsRf10gL5itWpHCet0nkmeFgziJAj_0Alh59Se0CHFXVEw5AAIXxHRziKhYlFYNghGswQls4tfyUgwi891vM7qFZRsQrL_S1efQYR10hY0ljFjQPcixOzv9QWs109YnquUCyyT9Xa6KhdTQDiAj1UXMcm1E0MPH57t8dIL0-9iM3nBGxui285y3A_FN7VfkiG5Mp6wuH-jeyTnp-U7GBz2JSgYzLqxDbm1kp5gyquzxPb-yhz56iWN3v7l3cfUZLyE610NTW_bDKzhjE5rWTY7-edgLxJeP743P2SKqxhBfMuRk8QgL_ifmG0y6G4fypUZvlhnF93WgJJTgQHBmiVrgq_OLtPZRp_A_3npEpW9dyF7xDjKZQnK4F6hZJ_t2sOik9Y3ndV0BP1rAZRdKTCaS2D4hGADMf3jM6CCWDSpV6n4BMhs4xEknqAf11nJe8SF4d4wUqBbrHAlKVJo7FQqRgCxdtXE9_5A13ImWsen0xxb3-1tPS21l02QiZargSZaT-RLWQXwmMhIdw
+2025-05-02 13:47:34 - Accept=[application/json, application/*+json]
+2025-05-02 13:47:34 - Response 200 OK
+2025-05-02 13:47:34 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 13:47:34 - Wrong password attempt for email: dan@gmail.com
+2025-05-02 13:47:34 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:47:34 - Writing [{message=Wrong password!}]
+2025-05-02 13:47:34 - Completed 401 UNAUTHORIZED
+2025-05-02 13:48:48 - GET "/checkEmail?email=daniel@gmail.com", parameters={masked}
+2025-05-02 13:48:48 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 13:48:48 - Checking if email exists: daniel@gmail.com -> false
+2025-05-02 13:48:48 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:48:48 - Writing [false]
+2025-05-02 13:48:48 - Completed 200 OK
+2025-05-02 13:48:48 - POST "/user", parameters={}
+2025-05-02 13:48:48 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 13:48:48 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@3866e81]
+2025-05-02 13:48:48 - Using @ExceptionHandler backend.exception.ValidationExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2025-05-02 13:48:48 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:48:48 - Writing [{password=Password must be at least 8 characters}]
+2025-05-02 13:48:48 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> backend.controller.UserController.newUserModel(backend.model.UserModel): [Field error in object 'userModel' on field 'password': rejected value [sdff]; codes [Size.userModel.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userModel.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2025-05-02 13:48:48 - Completed 400 BAD_REQUEST
+2025-05-02 13:50:01 - GET "/checkEmail?email=david@gmail.com", parameters={masked}
+2025-05-02 13:50:01 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 13:50:01 - Checking if email exists: david@gmail.com -> false
+2025-05-02 13:50:01 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:50:01 - Writing [false]
+2025-05-02 13:50:01 - Completed 200 OK
+2025-05-02 13:50:01 - POST "/user", parameters={}
+2025-05-02 13:50:01 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 13:50:01 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@1a4322f4]
+2025-05-02 13:50:01 - Using @ExceptionHandler backend.exception.ValidationExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2025-05-02 13:50:01 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 13:50:01 - Writing [{password=Password must be at least 8 characters}]
+2025-05-02 13:50:01 - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> backend.controller.UserController.newUserModel(backend.model.UserModel): [Field error in object 'userModel' on field 'password': rejected value [David]; codes [Size.userModel.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userModel.password,password]; arguments []; default message [password],2147483647,8]; default message [Password must be at least 8 characters]] ]
+2025-05-02 13:50:01 - Completed 400 BAD_REQUEST
+2025-05-02 14:05:58 - GET "/checkEmail?email=sss@gmail.com", parameters={masked}
+2025-05-02 14:05:58 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 14:05:58 - Checking if email exists: sss@gmail.com -> false
+2025-05-02 14:05:58 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:05:58 - Writing [false]
+2025-05-02 14:05:58 - Completed 200 OK
+2025-05-02 14:05:58 - POST "/user", parameters={}
+2025-05-02 14:05:58 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 14:05:58 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@5ffde147]
+2025-05-02 14:05:58 - Registering user: sss@gmail.com
+2025-05-02 14:05:58 - User registered successfully: 703
+2025-05-02 14:05:58 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:05:58 - Writing [backend.model.UserModel@5ffde147]
+2025-05-02 14:05:58 - Completed 200 OK
+2025-05-02 14:10:24 - GET "/checkEmail?email=hello@gmail.com", parameters={masked}
+2025-05-02 14:10:24 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 14:10:24 - Checking if email exists: hello@gmail.com -> false
+2025-05-02 14:10:24 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:10:24 - Writing [false]
+2025-05-02 14:10:24 - Completed 200 OK
+2025-05-02 14:10:24 - POST "/user", parameters={}
+2025-05-02 14:10:24 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 14:10:24 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@42d1c3f8]
+2025-05-02 14:10:24 - Registering user: hello@gmail.com
+2025-05-02 14:10:24 - User registered successfully: 704
+2025-05-02 14:10:24 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:10:24 - Writing [backend.model.UserModel@42d1c3f8]
+2025-05-02 14:10:24 - Completed 200 OK
+2025-05-02 14:12:19 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 14:12:19 - Graceful shutdown complete
+2025-05-02 14:12:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 14:12:19 - HikariPool-1 - Shutdown initiated...
+2025-05-02 14:12:19 - HikariPool-1 - Shutdown completed.
+2025-05-02 14:14:07 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-02 14:14:07 - Starting BackendApplication using Java 22.0.1 with PID 9624 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 14:14:07 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 14:14:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 14:14:10 - Finished Spring Data repository scanning in 1298 ms. Found 2 JPA repository interfaces.
+2025-05-02 14:14:10 - Tomcat initialized with port 8080 (http)
+2025-05-02 14:14:10 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 14:14:10 - Starting service [Tomcat]
+2025-05-02 14:14:10 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 14:14:10 - Initializing Spring embedded WebApplicationContext
+2025-05-02 14:14:10 - Root WebApplicationContext: initialization completed in 2466 ms
+2025-05-02 14:14:10 - Filter 'corsFilter' configured for use
+2025-05-02 14:14:10 - HikariPool-1 - Starting...
+2025-05-02 14:14:10 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54af3cb9
+2025-05-02 14:14:10 - HikariPool-1 - Start completed.
+2025-05-02 14:14:10 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 14:14:10 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 14:14:10 - HHH000026: Second-level cache disabled
+2025-05-02 14:14:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 14:14:11 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 14:14:11 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 14:14:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 14:14:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 14:14:12 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 14:14:12 - 
+
+Using generated security password: 4876bd6d-edd8-41c2-b7f5-63e7f9dd7912
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 14:14:12 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 14:14:12 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 14:14:12 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 14:14:12 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 14:14:12 - ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 14:14:12 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 14:14:12 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 14:14:12 - Started BackendApplication in 5.328 seconds (process running for 6.028)
+2025-05-02 14:15:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 14:15:44 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 14:15:44 - Detected StandardServletMultipartResolver
+2025-05-02 14:15:44 - Detected AcceptHeaderLocaleResolver
+2025-05-02 14:15:44 - Detected FixedThemeResolver
+2025-05-02 14:15:44 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5fb0a09e
+2025-05-02 14:15:44 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@26d02dc6
+2025-05-02 14:15:44 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 14:15:44 - Completed initialization in 1 ms
+2025-05-02 14:15:44 - GET "/checkEmail?email=cccc@gmail.com", parameters={masked}
+2025-05-02 14:15:44 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 14:15:44 - Checking if email exists: cccc@gmail.com -> false
+2025-05-02 14:15:44 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:15:44 - Writing [false]
+2025-05-02 14:15:44 - Completed 200 OK
+2025-05-02 14:15:44 - POST "/user", parameters={}
+2025-05-02 14:15:44 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 14:15:44 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@6ebb0c65]
+2025-05-02 14:15:44 - Registering user: cccc@gmail.com
+2025-05-02 14:15:44 - User registered successfully: 752
+2025-05-02 14:15:44 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:15:44 - Writing [backend.model.UserModel@6ebb0c65]
+2025-05-02 14:15:44 - Completed 200 OK
+2025-05-02 14:16:24 - POST "/login", parameters={}
+2025-05-02 14:16:24 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 14:16:24 - Read "application/json;charset=UTF-8" to [{email=cccc@gmail.com, password=Cccc@1234, captchaToken=03AFcWeA6QFExjazi6u5x-WTXEhxZTKJbqleug4D8t2M (truncated)...]
+2025-05-02 14:16:24 - Login attempt for email: cccc@gmail.com
+2025-05-02 14:16:24 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA6QFExjazi6u5x-WTXEhxZTKJbqleug4D8t2MfnvBfqmMsiQikXew8XU9FTuyeQypveXvAmQqofpkb2Wd22URoRFUqahPGbauEx5Rdj9sVO3KETD45zX0e9IdAld1i2ZlrhZiBJ8fkaBXdqmi0lhK6TAVHm0nsaKfsqLzRl1octM5919qdZNdF_paipJqByESrhxDi7DNV2TYrgCroQliQDCCXBbzmtQknutP-FhaDrTpVuIThV_W8J4N2xVbk48-eVXDnojSIXe41cDgIE2O2BOOMqkXVeeEmGOf201Wc0_6fr0CKORBfCy9yfGy5eT5gHFwaNpqrWpBYtKMBtGDFWUEwtd_4oGljAsu_Sx-7QW0-FhJ-PHewPYO-sYJkPdZZYCFUWmEqCvL-Qk_x97CR3HFWRIJibndjD1vEyTYFGfAd3HvyZIvFf9P3d1guE9rUiSyDdJmwXqXYSFwLuagLolnz2Z4Um_ujt94bk5hlOBWQQPzqDlAOjsmlBIXmSBEhgFfqOkwvZHSJqv5aOlI-1DDhQWewGDeFiYjQ85RD3-wnfTgrKp5YOAYXZgTsB6EdVVyhxpv5jwKadOr1gN_FIgbSR4u70fjvlwiw11GTvz46P_B1YeY2It3_iBN2ubvQIxa0qpNp3on2HzFVg_4vAHMtJGOUSnmqH-BNNC59S-b0b-dEWcap_SojgUcxQCtpanxXE1TuQxrZc3qakf9DYIKklGbICNDD3pIPC_yYKmA3L8MZxwr1Gp9cE_kLb5HnSeZZkINaydeU8ACUPyWz3K4D0z6C0hFxLyuMUczdnDEj_DpAU3qdt1xoAurGLJ388lSk-3qjfaSBelCayzAlurf8L168ZkTSWQ7yNY7tVguAg2ihnxAIXvxho67T87xhQ5MLB3p6Xj9CbhXBEDwI9J2I8usyesgA8enYQN8IQg2iRWBqFpD3U_5-d-cqFtYG8cxXciDdf3XgSyKUTvNY76xLGcr07ehXDyta4hxCuEkHI_Bdz8Gj3VtRZepZp_kbHyb2UHoDPY0nHZyPPvAGsNw60RcxzjH_R3EdkdV6-tNAhX-RKSMF3jGwxKMHd2chOwWXXSCjuvcpji4NCx-YWd9bxL8g7DEtT_gq8oEIEP4sSPhpta-jWo4aVSzQ15slL4y9mWNJxXbKqWgm8tSeOOkwSZuTuBB1to3sqqFj9vvaAUH14i4JPkeTC30xPHncYCN2MQTekSTH3JTLbXBZO4R5Oe3FM9HvVUXiXJE-CN34DcCVffsnIt1S5frtTDHzhkQoAPmxZN4wx33LNy2tqaS7HuylIJpCEyrGInC67DZEB3rO8X4lvpFDq-axROBOsKu4DXzmbKSyATMMeHPaE0FuJlmKe3VgCijEITUs1jQ1OYC3C4RDgB3h4vKU1Z3QK3uMTBZo0roHhhrcfvtAOSlv8IvicbpYYe2dBSfyUBds9Wuh-MOaeqwDO9ota4pb33DUtbO_cyb6NLMEN4_nEu2vr6Ja482Ro5liJU-kfWdaN_VQpvStHIsf2Zx7PS6ZpT4ozED81x1wLsSQlD7fGHePqNjfaMSs2qpSjexvNpr5X1M4SyZ76IDUCnnS5wvOceUH8fWZXZGYHaRvtc2fpb2eEPQ0dDI9CHjX09y9DZjkHI4NxE5GquAybyVFFUdF8Uw-AgV9PtgZJbryA9bSxiUww02AiJkN9M0E-Z9Y3Q_heIFyysmUzMIAcQV_qFVc1Gz19ZEiJFrCdqhzwIm5SBL0Ve1l7smsIvfranr3Qu8CbN-eD-RQ3xB8M8XFUMtY16nXOo3hv63lT9sryIoFhz1L98YF92q6-gXRQiUxg3U3So6l0sz-BGxVk0sjGNbvg0bH8oLfYKSzSnNzNgFwC0lpJjgjbVV1NZFpCR01BKBefF3bFIXTahgamtliLjr3Ly1QK0YP_XmmX4mXsGNDGG4zt3XHW7L-DEHsYyMkghsNxMCJxpRIK5wIGv8_kkTw3u2oOa9K_U8Ui55wx4yTXWh5YHdsMzra2K7-5e_M5pDu4ALDKxYSMfabqHJ3dQ6AIsWQbMikY7yEDK97_Dl8jaKPaLz_-Wi11zdy0LY72H_Tg0GrzoYGScZdVcVzdzpUJzXY6eH0nR4qKdQm0fH9-dqgI6vaZmEVavdIKTdASxIN-0x4
+2025-05-02 14:16:24 - Accept=[application/json, application/*+json]
+2025-05-02 14:16:24 - Response 200 OK
+2025-05-02 14:16:24 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 14:16:25 - Wrong password attempt for email: cccc@gmail.com
+2025-05-02 14:16:25 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:16:25 - Writing [{message=Wrong password!}]
+2025-05-02 14:16:25 - Completed 401 UNAUTHORIZED
+2025-05-02 14:17:00 - GET "/checkEmail?email=super@gmail.com", parameters={masked}
+2025-05-02 14:17:00 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 14:17:00 - Checking if email exists: super@gmail.com -> false
+2025-05-02 14:17:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:17:00 - Writing [false]
+2025-05-02 14:17:00 - Completed 200 OK
+2025-05-02 14:17:00 - POST "/user", parameters={}
+2025-05-02 14:17:00 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 14:17:00 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@3abd699b]
+2025-05-02 14:17:00 - Registering user: super@gmail.com
+2025-05-02 14:17:00 - User registered successfully: 753
+2025-05-02 14:17:00 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:17:00 - Writing [backend.model.UserModel@3abd699b]
+2025-05-02 14:17:00 - Completed 200 OK
+2025-05-02 14:17:19 - POST "/login", parameters={}
+2025-05-02 14:17:19 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 14:17:19 - Read "application/json;charset=UTF-8" to [{email=super@gmail.com, password=Spuer@123, captchaToken=03AFcWeA7Mfv0l6dMy8MVFBQqr8OWUx4yaYz5iHWHAI (truncated)...]
+2025-05-02 14:17:19 - Login attempt for email: super@gmail.com
+2025-05-02 14:17:19 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7Mfv0l6dMy8MVFBQqr8OWUx4yaYz5iHWHAIvuPxHhfsZ9aEiZ5-BeykwYHLMaJJr-2Kc2E0mRhgqW98YyqNsU39kolkww0fxRbVEyHl6FhVyQo4t7rxOS7uKXGqODQGqYS5MoshVKaYYwOegruu4YtaWScKbyQ2OIHo0Ci6rbP3OtZN2Bz9t5VwOhpKLE76JlBAtq74kCjguj-hwPnJLbOtAmhVETQjOwBY_Ou9d9e5Be3j-gYMjprCZdVMMZ6HFgt5A78gYaMlPx_j1ghojm-fdM2OtvCSc2aQoBAEcm1kLLGA-nujFaPPuUv58Fmotw1aqKWuap0QJxBR4beLC3in95sAxhz8o81HjvVy46v3R09AB390z5lNWeq-L8CoZ4Jl4m02g-or8zb1HyhjkzOG6FgjEBzkfeTXWr7LkxfUYLI6yHzXHmM3d8QKlLBUSFkHLXtvP18Rje9jPbMePd3PucnCPgQZPmHklECm9THgUL_2urvx2WJ_rJEflz1XJUCSaGY0WEg9NsHYOXXjfvhIgQStz6uRUYvyYREz3e1i23t6MJzhbOFaW1tsLsxmASZm-fPxidPmSoSicJrin0zhy62WEOAExie8aH_iLfOYeM7u2eg1CWIFdXhCWIk_KifpAUhcRYL0fjzX5RSYBlYywVz0Ga7nPO2-qQMjcErxVnZBMvxBffjAY8JS-Kqr7vBobEMuvoWByqilf3_d2IextuqDSO9W3Vw8AG4w1b_0gM-ExpaKc3LzqGFr6l4Yifrp18mxLZkMSGFAFhzOrrYBvL7pKRFcNIiCnFkYZf8r2PhYBZgcQsscfHGjv_qqbatom3Q_rMAN4kPP7Xhth9UpgyOy5XRdce6dn9pz1e9CsDA42jy3iMC0b7qLFsM9IMC0EK-BjlR-rXBUjbXKMu3lImVKmbDmfA1eAPUZ4jp4mFt-PRGdBrFKpF_RCWp63mn6izb8w4Q2s7d6Ja_Qb3FJRqLIwp-5zFGwxd0vpwbwrQOXg7sxOzgTqoh0t36cZJzcUvY5sDJuu1DsGy6pB5g-gkbkXaPEelQ7D510sA5-ObHlTqJSO6-8DBb43E_9IEkvPowfN1HcV_L64ID02bOK2zlsjfrd7laPC1YjcJAmVmVdv27kLz4bHY1-czLs-7OCeXNHtx6NqmufxEnUTadwkaik_ESRHCcWEgiZoccXRqZP0I_ZZfSTGVOdk-vJ_KaLk5K7eOzO6GeKoYx6H36o2BIvk4ovsMldifPHbZGZ-RujFckOuKty3sJBfj56sjWQQ2cggz8nCizeloqFWba0r1jLy92fp2mhSfkch1wVxzRydKlw6ijEjpwESE7NU0UmJ7MzWc_BzDjFRfsGpPHka1nl1eunyaGwUkxZ8qp5offCjNLwaFTe1X07Kp2sX0Pde5pNP7nipnqB-XMQVAbK6u62SR60TrXwbJXneLO0EUriNTsLCste_xc3ZhySUvZZM63GrwQdrPZ66SK4wF6g1gXqpoOEZ0YP3IfZBUjP_Xi2qWZXOFTOZrUiJE59QlsJhypRNSyjnzvLuswHza3nCcXfwvdcCKkq0PYqZGfAnRop23vinfMR6n7Ko9nQu1N70Rrjj1Zcd87HYg2WY8gl333wxJNjUXW7GGeDWrBOhb9zlvie_2H7ZvqttbCcc_bMU43UIqcXknQfD_2QEw44xt_odEa-ZMyPa0Qr72mW2yZ3p5AckosS4kg8QfuuEP2AH4pHDKWF2hHiBbdM1w_zmLwL6jmGm6Q2eEsFGUehimx_1QNSGdZVGMs6inzRN0217otRVB0-pMJlSKTHmQAFdw7yDzJdAfDoeX_-v5fcBV_IHd2jZSb4Te0emXz_pCbdArdeN8LcVQSq1cTSW42ry7v_SO0fyfzT8lMMj7DWHUWIs1TCwXcvqAexCXKrbMJ5ACJsyqXsqFQQce-_mMtEXcxYIozcWy5fQ09dSwA19lwPIw9Oewi6jMPjM78XARJy1dtvFSw17g9VB4FiYDIH8vxuRWK6H5xE5o-8EkvkUuwsskJM9wtsrLUmUHTGb-Ksau2vlWWlGu0d9Bf36CNI1zs3fKQ7KJLzXuqOj0Lph0ZN0plP2ms2JSxbWjh6h0p4k97YuChKltepSa5j6rb5531S2-NXnOIxuX2_nLuflfZrZA
+2025-05-02 14:17:19 - Accept=[application/json, application/*+json]
+2025-05-02 14:17:19 - Response 200 OK
+2025-05-02 14:17:19 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 14:17:19 - Wrong password attempt for email: super@gmail.com
+2025-05-02 14:17:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:17:19 - Writing [{message=Wrong password!}]
+2025-05-02 14:17:19 - Completed 401 UNAUTHORIZED
+2025-05-02 14:18:11 - POST "/login", parameters={}
+2025-05-02 14:18:11 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 14:18:11 - Read "application/json;charset=UTF-8" to [{email=super@gmail.com, password=Super@123, captchaToken=03AFcWeA6CIxoouWNflDZfc2evz-tmqAqzZaSj8TSzt (truncated)...]
+2025-05-02 14:18:11 - Login attempt for email: super@gmail.com
+2025-05-02 14:18:11 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA6CIxoouWNflDZfc2evz-tmqAqzZaSj8TSztFtRWYke2-0dnY-BBwqAZL3MnkvZZQnxZAVsT2MkOWnpjVqtXLaM00zG2BhD2gy8Lv2w0LJeZ9S6PpCX2r4JetMS8ZDY_qWeUU6Onn5CyehXPCPLSnCKTVWwGugJUR2oXV3MmxB042Orv8F90yj5RE5C0gBRHsE4sRh2vUu7DQUecN2vQ55vRG1qtklAEwgzsa0bckT-0NuUE8a7VpAidWfpy9yUPoYw9bRTCh9_mCTA99Czrv9I_BDD6eFPSsrMgFN-Opd_S3MfppyV78LWoAYjm_4NBKUpyRDIoiR9nHMd_KXIIbe-_7HUDVArwoxGCEQul2APLz4JEZBxsZXcZvR12pfLBLslW0KM7UA22pFRhB9Ji1gQeLREU7WbC3g0rZMnIEqAwDOGL4-5KWwLhkQ2ER_f5IsiUEzajvCej_MRqMUpErtH5QsHUojkBIV2c5kuvUAWmsxszgtXllS7MjCYK2CPF3Y-7gR2bqovfj3l-37SZ6orgTOAMUy8VYrThBYRCRzmgufS6jQ9FMVXZZdyN6jUvinRCCqpghQOgZAR_1Pllq29DKXU5xnWlMQWHUH0eXacb1ofr-WrsHtr_EYHtCvZcEIOE_0FJShAJooEt7VztAw8wBsKu501f8VRKMP5jsF8koir8lCAr_Kp4L8l-dp87Atw7z3sDNQliQMgPvyVfnvd_b6azStF2M7Kwj0aeJhkfGelroghBV4QACyY3CNICr6iyVGZ9aPIVoMuU2shx8hQblrIlPBJXJWFBg--kSce_142IZTvARlO6z9myHWxQ0gNBia6qdLtDaiLLp2C_IUftWAjqHnpDFC1Hqc9LZDiZTj2KP2ARdl2MOIn-N-Ly7gVAHRmLrrQz_ql4A0_oh11RKksMk1d3urC4UoNsBiDwvZ6zIe5WF6iWCD9955cLKGxvAYWun8E2Uw2FmP70MieS1zsmT-EII7iBhuXNwd4D7ARD22oKun3t7HAcuF3M_fpn7-YqcjexT7YU4HNbwubFYQVvtbOEpNrshR9o7wpI8wcWAM8teXMd1Vxs93vUwS8o2yfIX38S4oK4H-4KUSWzX3uEGixjn4_pmgWatHOK6H-RKu5pw5KSATFxAAfSubZRNjpgI1PigZ_g9cNMllNvNZ6iFPOqk0HE56qb8riGvv7rNOda-oYjJYYQ-7Qk8rixXCdF8BExC7Z-dQ8tbHdqtxMhkojuWY6xfm7ooWRS1BpRaWiiISP6uDUZyUObA_H22KsgfaOz8MjYlHfrMqWub304KJQgun21TmUv9QaiktGy_wYOLHD6-fWc5TZLoatopBd7DwrDRMJasJbAv3ffIFmQpEnoGuLTtp0ALIesoYN7ghxaylC1b1wpcs6dXzwROZU6MstDasWTMm0jfKa_GT3p6oVlgEQo4q88t7zujVdc1GLne8atbU9QueY_vXaV1KyIbWjP-Is4dIcF11PVyF-PDbM3dlA_9fZXNFrru-LLFdzYgkzEsFXkRZa09bgFG2gb6TeUvhmWwylPkMAGZMMO5TL5Jwlyca1f7bNjr5t_-oyHvRgaxemk76L-c_7YeFwghaQGlhhL9Hd3eD6rknwA3rY9M-SuieVu3sw4fQK3AbfwA11ZL7dsEPvadHN3jCel558D2HEwRG7RSroeJ-aE2RVUdKsIvJ2BrqwkAUcDReR5FOoWQYdvWv2JGvBhVqpkYwBbozTO36xVecH3Apeh3KDoTYciHz_c5XsR3sLAFJ1UZQkF9etSCrIpsTwbUIDoiH8kzXGswNYB1czULK6ddv-_edMeBwMzOwBOFVX7-CqdpFeZ8NJprsTv5ZnvUPI0OWEL7dL_zQFs8Bla6m3BbKKayvtWyOM8ngAKzMYZslA48ylAcl2fAevO1WEzvV2ObSAY99PJ2Fpfnq4uFGG3K6olB3e96qW979IplCnvMRoo4ThHQB0JGW8Sn6oOxmCxY2BGUkKfwCPjuVRLjE4-Xr3t-1rNXdBTGg-BkXHsGF9iF3zMLQL9ySlienuu_x-wW0LKEdUIfXoxrqZ4nPkkdGwEja-2s3m53cvvQhr7SK_IjyvZ7018wXRvy48XLu2gpBjJQLsUWOA0KzRPKrynhFmj1k3XZLEB4tHmKk4IZQ
+2025-05-02 14:18:11 - Accept=[application/json, application/*+json]
+2025-05-02 14:18:12 - Response 200 OK
+2025-05-02 14:18:12 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 14:18:12 - User logged in successfully: super@gmail.com
+2025-05-02 14:18:12 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:18:12 - Writing [{id=753, message=Login successful}]
+2025-05-02 14:18:12 - Completed 200 OK
+2025-05-02 14:18:14 - GET "/me", parameters={}
+2025-05-02 14:18:14 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 14:18:14 - User session found for ID: 753
+2025-05-02 14:18:14 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:18:14 - Writing [{email=super@gmail.com, fullName=supernova, id=753}]
+2025-05-02 14:18:14 - Completed 200 OK
+2025-05-02 14:18:14 - GET "/inventory", parameters={}
+2025-05-02 14:18:14 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 14:18:14 - Fetching all inventory items
+2025-05-02 14:18:14 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:18:14 - Writing [[]]
+2025-05-02 14:18:14 - Completed 200 OK
+2025-05-02 14:18:21 - GET "/user/753", parameters={}
+2025-05-02 14:18:21 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 14:18:21 - Fetching user by ID: 753
+2025-05-02 14:18:21 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:18:21 - Writing [backend.model.UserModel@5eef51eb]
+2025-05-02 14:18:21 - Completed 200 OK
+2025-05-02 14:18:28 - GET "/user/753", parameters={}
+2025-05-02 14:18:28 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 14:18:28 - Fetching user by ID: 753
+2025-05-02 14:18:28 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:18:28 - Writing [backend.model.UserModel@1bf3355]
+2025-05-02 14:18:28 - Completed 200 OK
+2025-05-02 14:21:36 - GET "/user/753", parameters={}
+2025-05-02 14:21:36 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 14:21:36 - Fetching user by ID: 753
+2025-05-02 14:21:36 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:21:36 - Writing [backend.model.UserModel@5ead8eec]
+2025-05-02 14:21:36 - Completed 200 OK
+2025-05-02 14:22:21 - GET "/user/753", parameters={}
+2025-05-02 14:22:21 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 14:22:21 - Fetching user by ID: 753
+2025-05-02 14:22:21 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:22:21 - Writing [backend.model.UserModel@3c120ab4]
+2025-05-02 14:22:21 - Completed 200 OK
+2025-05-02 14:25:23 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 14:25:23 - Graceful shutdown complete
+2025-05-02 14:25:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 14:25:23 - HikariPool-1 - Shutdown initiated...
+2025-05-02 14:25:23 - HikariPool-1 - Shutdown completed.
+2025-05-02 14:27:34 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-02 14:27:34 - Starting BackendApplication using Java 22.0.1 with PID 1996 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 14:27:34 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 14:27:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 14:27:35 - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2025-05-02 14:27:36 - Tomcat initialized with port 8080 (http)
+2025-05-02 14:27:36 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 14:27:36 - Starting service [Tomcat]
+2025-05-02 14:27:36 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 14:27:36 - Initializing Spring embedded WebApplicationContext
+2025-05-02 14:27:36 - Root WebApplicationContext: initialization completed in 1169 ms
+2025-05-02 14:27:36 - Filter 'corsFilter' configured for use
+2025-05-02 14:27:36 - HikariPool-1 - Starting...
+2025-05-02 14:27:36 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f025000
+2025-05-02 14:27:36 - HikariPool-1 - Start completed.
+2025-05-02 14:27:36 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 14:27:36 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 14:27:36 - HHH000026: Second-level cache disabled
+2025-05-02 14:27:36 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 14:27:36 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 14:27:36 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 14:27:37 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 14:27:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 14:27:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 14:27:38 - 
+
+Using generated security password: a85572ba-78af-4c53-8281-e462ebf1e056
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 14:27:38 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 14:27:38 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 14:27:38 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 14:27:38 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 14:27:38 - ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 14:27:38 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 14:27:38 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 14:27:38 - Started BackendApplication in 4.102 seconds (process running for 4.983)
+2025-05-02 14:29:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 14:29:32 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 14:29:32 - Detected StandardServletMultipartResolver
+2025-05-02 14:29:32 - Detected AcceptHeaderLocaleResolver
+2025-05-02 14:29:32 - Detected FixedThemeResolver
+2025-05-02 14:29:32 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4cf1ec2
+2025-05-02 14:29:32 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d3a238
+2025-05-02 14:29:32 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 14:29:32 - Completed initialization in 1 ms
+2025-05-02 14:29:32 - GET "/checkEmail?email=baby@gmail.com", parameters={masked}
+2025-05-02 14:29:32 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 14:29:32 - Checking if email exists: baby@gmail.com -> false
+2025-05-02 14:29:32 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:29:32 - Writing [false]
+2025-05-02 14:29:32 - Completed 200 OK
+2025-05-02 14:29:32 - POST "/user", parameters={}
+2025-05-02 14:29:32 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 14:29:32 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@9e3df7c]
+2025-05-02 14:29:32 - Registering user: baby@gmail.com
+2025-05-02 14:29:33 - User registered successfully: 802
+2025-05-02 14:29:33 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 14:29:33 - Writing [backend.model.UserModel@9e3df7c]
+2025-05-02 14:29:33 - Completed 200 OK
+2025-05-02 14:30:04 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 14:30:04 - Graceful shutdown complete
+2025-05-02 14:30:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 14:30:04 - HikariPool-1 - Shutdown initiated...
+2025-05-02 14:30:04 - HikariPool-1 - Shutdown completed.
+2025-05-02 20:22:19 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-02 20:22:19 - Starting BackendApplication using Java 22.0.1 with PID 7564 (C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\target\classes started by dinuw in C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend)
+2025-05-02 20:22:19 - No active profile set, falling back to 1 default profile: "default"
+2025-05-02 20:22:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-02 20:22:20 - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2025-05-02 20:22:21 - Tomcat initialized with port 8080 (http)
+2025-05-02 20:22:21 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-02 20:22:21 - Starting service [Tomcat]
+2025-05-02 20:22:21 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-02 20:22:21 - Initializing Spring embedded WebApplicationContext
+2025-05-02 20:22:21 - Root WebApplicationContext: initialization completed in 1298 ms
+2025-05-02 20:22:21 - Filter 'corsFilter' configured for use
+2025-05-02 20:22:21 - HikariPool-1 - Starting...
+2025-05-02 20:22:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f025000
+2025-05-02 20:22:21 - HikariPool-1 - Start completed.
+2025-05-02 20:22:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-02 20:22:21 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-02 20:22:21 - HHH000026: Second-level cache disabled
+2025-05-02 20:22:22 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-02 20:22:22 - HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-05-02 20:22:22 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-02 20:22:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-02 20:22:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 20:22:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-02 20:22:23 - 
+
+Using generated security password: a1b989cf-9678-4f3a-8760-1baa38630766
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-02 20:22:23 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-02 20:22:23 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-02 20:22:23 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-02 20:22:23 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-02 20:22:23 - ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-02 20:22:23 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-02 20:22:23 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-02 20:22:23 - Started BackendApplication in 4.564 seconds (process running for 5.546)
+2025-05-02 20:30:59 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-02 20:30:59 - Initializing Servlet 'dispatcherServlet'
+2025-05-02 20:30:59 - Detected StandardServletMultipartResolver
+2025-05-02 20:30:59 - Detected AcceptHeaderLocaleResolver
+2025-05-02 20:30:59 - Detected FixedThemeResolver
+2025-05-02 20:30:59 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b01b3f8
+2025-05-02 20:30:59 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f65639e
+2025-05-02 20:30:59 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-02 20:30:59 - Completed initialization in 3 ms
+2025-05-02 20:30:59 - GET "/inventory", parameters={}
+2025-05-02 20:30:59 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:30:59 - Fetching all inventory items
+2025-05-02 20:30:59 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:30:59 - Writing [[]]
+2025-05-02 20:30:59 - Completed 200 OK
+2025-05-02 20:32:42 - POST "/inventory/itemImg", parameters={multipart}
+2025-05-02 20:32:42 - Mapped to backend.controller.InventoryController#itemImage(MultipartFile)
+2025-05-02 20:32:42 - Uploading item image: vr-glasses-gaming.jpg
+2025-05-02 20:32:42 - Image uploaded successfully: vr-glasses-gaming.jpg
+2025-05-02 20:32:42 - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-02 20:32:42 - Writing ["vr-glasses-gaming.jpg"]
+2025-05-02 20:32:42 - Completed 200 OK
+2025-05-02 20:32:42 - POST "/inventory", parameters={}
+2025-05-02 20:32:42 - Mapped to backend.controller.InventoryController#newInventoryModel(InventoryModel)
+2025-05-02 20:32:42 - Read "application/json;charset=UTF-8" to [backend.model.InventoryModel@1d5f284e]
+2025-05-02 20:32:42 - Creating new inventory item: VR
+2025-05-02 20:32:42 - Inventory item created with ID: 1
+2025-05-02 20:32:42 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:32:42 - Writing [backend.model.InventoryModel@1d5f284e]
+2025-05-02 20:32:42 - Completed 200 OK
+2025-05-02 20:35:19 - POST "/inventory/itemImg", parameters={multipart}
+2025-05-02 20:35:19 - Mapped to backend.controller.InventoryController#itemImage(MultipartFile)
+2025-05-02 20:35:19 - Uploading item image: ZJCGO-4K-UHD-2160P-DVR-bmw.webp
+2025-05-02 20:35:19 - Image uploaded successfully: ZJCGO-4K-UHD-2160P-DVR-bmw.webp
+2025-05-02 20:35:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-02 20:35:19 - Writing ["ZJCGO-4K-UHD-2160P-DVR-bmw.webp"]
+2025-05-02 20:35:19 - Completed 200 OK
+2025-05-02 20:35:19 - POST "/inventory", parameters={}
+2025-05-02 20:35:19 - Mapped to backend.controller.InventoryController#newInventoryModel(InventoryModel)
+2025-05-02 20:35:19 - Read "application/json;charset=UTF-8" to [backend.model.InventoryModel@4d7288ef]
+2025-05-02 20:35:19 - Creating new inventory item: Rear Camera (for cars)
+2025-05-02 20:35:19 - SQL Error: 1406, SQLState: 22001
+2025-05-02 20:35:19 - Data truncation: Data too long for column 'item_details' at row 1
+2025-05-02 20:35:19 - Failed to complete request: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Data truncation: Data too long for column 'item_details' at row 1] [insert into inventory_model (item_category,item_details,item_id,item_image,item_name,item_qty,id) values (?,?,?,?,?,?,?)]; SQL [insert into inventory_model (item_category,item_details,item_id,item_image,item_name,item_qty,id) values (?,?,?,?,?,?,?)]
+2025-05-02 20:35:19 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Data truncation: Data too long for column 'item_details' at row 1] [insert into inventory_model (item_category,item_details,item_id,item_image,item_name,item_qty,id) values (?,?,?,?,?,?,?)]; SQL [insert into inventory_model (item_category,item_details,item_id,item_image,item_name,item_qty,id) values (?,?,?,?,?,?,?)]] with root cause
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'item_details' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:95)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:938)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1106)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1045)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1369)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1030)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:134)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:55)
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:194)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:132)
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:104)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:110)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:644)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:511)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:414)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:491)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2354)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1978)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:698)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:416)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.save(Unknown Source)
+	at backend.controller.InventoryController.newInventoryModel(InventoryController.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+2025-05-02 20:35:19 - "ERROR" dispatch for POST "/error", parameters={}
+2025-05-02 20:35:19 - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-05-02 20:35:19 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:35:19 - Writing [{timestamp=Fri May 02 20:35:19 IST 2025, status=500, error=Internal Server Error, path=/inventory}]
+2025-05-02 20:35:19 - Exiting from "ERROR" dispatch, status 500
+2025-05-02 20:35:24 - GET "/inventory", parameters={}
+2025-05-02 20:35:24 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:35:24 - Fetching all inventory items
+2025-05-02 20:35:24 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:35:24 - Writing [[backend.model.InventoryModel@6451f381]]
+2025-05-02 20:35:24 - Completed 200 OK
+2025-05-02 20:35:24 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:35:24 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:35:24 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:35:24 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:35:24 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:35:24 - Completed 200 OK
+2025-05-02 20:36:15 - POST "/inventory/itemImg", parameters={multipart}
+2025-05-02 20:36:15 - Mapped to backend.controller.InventoryController#itemImage(MultipartFile)
+2025-05-02 20:36:15 - Uploading item image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:36:15 - Image uploaded successfully: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:36:15 - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-02 20:36:15 - Writing ["ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg"]
+2025-05-02 20:36:15 - Completed 200 OK
+2025-05-02 20:36:15 - POST "/inventory", parameters={}
+2025-05-02 20:36:15 - Mapped to backend.controller.InventoryController#newInventoryModel(InventoryModel)
+2025-05-02 20:36:15 - Read "application/json;charset=UTF-8" to [backend.model.InventoryModel@31680b0]
+2025-05-02 20:36:15 - Creating new inventory item: Rear Camera 
+2025-05-02 20:36:15 - Inventory item created with ID: 3
+2025-05-02 20:36:15 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:36:15 - Writing [backend.model.InventoryModel@31680b0]
+2025-05-02 20:36:15 - Completed 200 OK
+2025-05-02 20:36:22 - GET "/inventory", parameters={}
+2025-05-02 20:36:22 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:36:22 - Fetching all inventory items
+2025-05-02 20:36:22 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:36:22 - Writing [[backend.model.InventoryModel@28d0e6b2, backend.model.InventoryModel@9deb63b]]
+2025-05-02 20:36:22 - Completed 200 OK
+2025-05-02 20:36:22 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:36:22 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:36:22 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:36:22 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:36:22 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:36:22 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:36:22 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:36:22 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:36:22 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:36:22 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:36:22 - Completed 200 OK
+2025-05-02 20:36:22 - Completed 200 OK
+2025-05-02 20:36:26 - GET "/inventory/1", parameters={}
+2025-05-02 20:36:26 - Mapped to backend.controller.InventoryController#getItemId(Long)
+2025-05-02 20:36:26 - Fetching inventory item with ID: 1
+2025-05-02 20:36:26 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:36:26 - Writing [backend.model.InventoryModel@35c68b30]
+2025-05-02 20:36:26 - Completed 200 OK
+2025-05-02 20:36:30 - PUT "/inventory/1", parameters={multipart}
+2025-05-02 20:36:30 - Mapped to backend.controller.InventoryController#updateItem(String, MultipartFile, Long)
+2025-05-02 20:36:30 - Read "application/octet-stream" to ["{"itemId":"ID206093811","itemName":"VR","itemCategory":"Electronics & Gadgets","itemDetails":"waoefh (truncated)..."]
+2025-05-02 20:36:30 - Updating inventory item with ID: 1
+2025-05-02 20:36:30 - No file uploaded
+2025-05-02 20:36:30 - Inventory item updated successfully with ID: 1
+2025-05-02 20:36:30 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:36:30 - Writing [backend.model.InventoryModel@5185d4d6]
+2025-05-02 20:36:30 - Completed 200 OK
+2025-05-02 20:36:31 - GET "/inventory", parameters={}
+2025-05-02 20:36:31 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:36:31 - Fetching all inventory items
+2025-05-02 20:36:31 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:36:31 - Writing [[backend.model.InventoryModel@12bd74dd, backend.model.InventoryModel@4b97004c]]
+2025-05-02 20:36:31 - Completed 200 OK
+2025-05-02 20:36:31 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:36:31 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:36:31 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:36:31 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:36:31 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:36:31 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:36:31 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:36:31 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:36:31 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:36:31 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:36:31 - Completed 200 OK
+2025-05-02 20:36:31 - Completed 200 OK
+2025-05-02 20:37:51 - GET "/checkEmail?email=msi@gmail.com", parameters={masked}
+2025-05-02 20:37:51 - Mapped to backend.controller.UserController#checkEmailExists(String)
+2025-05-02 20:37:51 - Checking if email exists: msi@gmail.com -> false
+2025-05-02 20:37:51 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:37:51 - Writing [false]
+2025-05-02 20:37:51 - Completed 200 OK
+2025-05-02 20:37:51 - POST "/user", parameters={}
+2025-05-02 20:37:51 - Mapped to backend.controller.UserController#newUserModel(UserModel)
+2025-05-02 20:37:51 - Read "application/json;charset=UTF-8" to [backend.model.UserModel@e18f3eb]
+2025-05-02 20:37:51 - Registering user: msi@gmail.com
+2025-05-02 20:37:51 - User registered successfully: 852
+2025-05-02 20:37:51 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:37:51 - Writing [backend.model.UserModel@e18f3eb]
+2025-05-02 20:37:51 - Completed 200 OK
+2025-05-02 20:38:08 - POST "/login", parameters={}
+2025-05-02 20:38:08 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-02 20:38:08 - Read "application/json;charset=UTF-8" to [{email=msi@gmail.com, password=Msi@1234, captchaToken=03AFcWeA6mbG3nGxc0VSveBzYOdgtjU-UB6QYSld6YvTF5 (truncated)...]
+2025-05-02 20:38:08 - Login attempt for email: msi@gmail.com
+2025-05-02 20:38:08 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA6mbG3nGxc0VSveBzYOdgtjU-UB6QYSld6YvTF59tP0YjtzLPVbfTc15WRV7qJy0NVAfM466GoplJulG-ulBcLRDXue4zuSl5W-Io932rnZYDOHdiLj5h_KLc29Oy4EUHF3cX1nhwylPWJfHbXzit8FDe7NkKAE4-S9gyUbFe0fqeNx5-jPtfrujbGr-31ReG2be-zXeXx3o7--lVPGUvimSvfs1RUQ7Y2H-n8wnNXlp-APTBXcwvkDsyDWGr3MqOT1AAcb6qlvvUH6n9LaKq08L0pYgCiV_1r9hs71mSuD3ffpV2viGHSfPPcsyPMMfPchhfz-3whQX4fjNp8J7PfwTs3_hbNEDIs1RJ4kfV9Li9Os5-JUFTBcFsCwDyZ9ExGt-OWfT5iVBkQ7I5mhMDd79U51sCx1PaElGt5seRhyf33i5CkZkW4SwpVGAJo1ElNXTZ8RM3a7H7deobZgqDe3akol2TXXGtPPCPSINOWOLGnf1Nj5IjnaRp5FZSkfHZkl2XgwtLkMPuPnLofWnR-oAD5VzuVodNstZQhbEGaRHyV3d3HiZu-tLMHjL8nzxFCtXOM7F11vl30kIrXXNvUZMK6W5IUbqBENY6i_rQlzrPPzN66eZ2eWqFIoNA9Hm0MgquN0bkvX48agjWh1-FXG2T2jUqhaQSV2SMUx7E_76dBg0tBpEdRtV78Z7gCWD9wPUOh-2OPjHGHRSvNdVnLnji3iBSbGdAALnioWP_IQnQhlanynmA05EuxTJqR6TTi7Mo9Kzb3G1sNkvj5jRNM5dmFPb21Y9Wx87V3Vm5hhbM7Y1g3ADpBIAxsWqnr3aBgL0AZ0jX8KBHfyFL6J1HChGa9hmIg83CfZdwksiWAww08Y5DAzQjWZsmry3HkL8inR9YgNuEXj9PMPtOpe5V21mQh7U-tabtJdBlliqBjSMJcqfLEkbRPfRGmIl3R40vSsT4QeJk0AbmJ3L5lPZCUoAswtNgPoktUaKGutlrS39_aOWXZ5ibSZ5562SzwGusgryw94DEKgpwGchjMxaUto59DLEmzN0t_WF0b_IXsV_Iq_D0T_gVaJQKq3I-DCMJP1d1IV_xCrLKdMJokpY20CL24ivQYMPL4eK7M8-OnKn6djx_QmztjHc-E-b_Om40fUgSYloEHg4hBiVoYxARGhei2qN0uBR8E1GYQN6lPpA-PW8tvGsVvznwrzG-KHMvtb7WLnPv9y8yuJKufYyrRKvp_C2bF7tav8Pg6nL5Mx_PpgLptkLgv2N3hcl-FvUW97ScUQ9VEsccXrmbQbtm8YBpH9ImJcBs6JjWY8tCVn_QB2Dw4cLZgEOEJ2gvA-klzh_vfdSqkon38RZMQYZC1EecGHsjs_RP73hLHozeqO99EPnSxA-IJUpRscR_MbliDNHsTdg66EUW8LOvBzzTs1vX_Il2xD64Qeb4CrO8a19kuECDofzsdX_VbUEl2HOQush7K3llWIB74wEC5uxr6r4l3rEQu4sL2-5q3KS7q-00qCUegpPTi44ZPWxZCbFNUGvotbWe3nY8LFcfKFqUN80l1sCh2ygwmT6XljwI9eXpQY3AhBjZEfvmbkoeVjYuBgrN7wTpDrbJBKYxQ2D-DWbUergHFnSiXsPcWyCT5Rlem5rDDJpATBqJXBBD5ddXlhORN31dhNaBGuvZmZuUD4q9UFaTlSbdGtlMqxehhAbM-L6Ej0SjeG2_x77PDNfHyL7PU3ebueMA48H7jtMgQWKFiYqKRPLL-5Br-efOvS8qE4nNA4UPfEJdSr6YTbFY0pWAbIJIotNhaZZIjCwSyi5x-5SN-GHvkLBsVjtKDrviesb3Ad-Mjdp3YvwPnTFRLFKg3WyME0nvOckJvk-6zxF8_TwP_Wp5bvZIDT9zzOIrNCWUmwge0vpeVpz-gO_ozJNp4kYR25fE1Xn-b9VgRtbdHO3C0fCsSEERIPR69un7zoP3NJWsLKD_dwOJkPf8lqUzDPQSntmKET_yjgMG3PYWeOfLD0_9NU7zb9q2LkF6EyLweUxRpy8V6XebayGh3MfrTWHG_7jSMnuaqEJq2_pR8gEf-GsnWP1bsgVMFW5bjTW2NP9stHIGTD5PfW5I8vVaFa92W8UKB1L6s4UPrdNj7b71PHIHvHPBCj--04LvzZzOc
+2025-05-02 20:38:08 - Accept=[application/json, application/*+json]
+2025-05-02 20:38:09 - Response 200 OK
+2025-05-02 20:38:09 - Reading to [backend.service.CaptchaResponse]
+2025-05-02 20:38:09 - User logged in successfully: msi@gmail.com
+2025-05-02 20:38:09 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:38:09 - Writing [{id=852, message=Login successful}]
+2025-05-02 20:38:09 - Completed 200 OK
+2025-05-02 20:38:13 - GET "/me", parameters={}
+2025-05-02 20:38:13 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 20:38:13 - User session found for ID: 852
+2025-05-02 20:38:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:38:13 - Writing [{fullName=msi, email=msi@gmail.com, id=852}]
+2025-05-02 20:38:13 - Completed 200 OK
+2025-05-02 20:38:13 - GET "/inventory", parameters={}
+2025-05-02 20:38:13 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:38:13 - Fetching all inventory items
+2025-05-02 20:38:13 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:38:13 - Writing [[backend.model.InventoryModel@70c1af43, backend.model.InventoryModel@74d864d8]]
+2025-05-02 20:38:13 - Completed 200 OK
+2025-05-02 20:38:13 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:38:13 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:38:13 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:38:13 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:38:13 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:38:13 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:38:13 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:38:13 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:38:13 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:38:13 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:38:13 - Completed 200 OK
+2025-05-02 20:38:13 - Completed 200 OK
+2025-05-02 20:38:40 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:38:40 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:38:40 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:38:40 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:38:40 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:38:40 - Completed 200 OK
+2025-05-02 20:38:43 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:38:43 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:38:43 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:38:43 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:38:43 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:38:43 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:38:43 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:38:43 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:38:43 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:38:43 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:38:43 - Completed 200 OK
+2025-05-02 20:38:43 - Completed 200 OK
+2025-05-02 20:39:04 - GET "/user/852", parameters={}
+2025-05-02 20:39:04 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 20:39:04 - Fetching user by ID: 852
+2025-05-02 20:39:04 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:39:04 - Writing [backend.model.UserModel@665f42e0]
+2025-05-02 20:39:04 - Completed 200 OK
+2025-05-02 20:39:06 - GET "/me", parameters={}
+2025-05-02 20:39:06 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-02 20:39:06 - User session found for ID: 852
+2025-05-02 20:39:06 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:39:06 - Writing [{fullName=msi, email=msi@gmail.com, id=852}]
+2025-05-02 20:39:06 - Completed 200 OK
+2025-05-02 20:39:06 - GET "/inventory", parameters={}
+2025-05-02 20:39:06 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-02 20:39:06 - Fetching all inventory items
+2025-05-02 20:39:06 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:39:06 - Writing [[backend.model.InventoryModel@2564b70c, backend.model.InventoryModel@6f0a42eb]]
+2025-05-02 20:39:06 - Completed 200 OK
+2025-05-02 20:39:06 - GET "/uploads/ZJCGO-4K-UHD-2160P-DVR-bmw%20copy.jpg", parameters={}
+2025-05-02 20:39:06 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:39:06 - Fetching image: ZJCGO-4K-UHD-2160P-DVR-bmw copy.jpg
+2025-05-02 20:39:06 - GET "/uploads/vr-glasses-gaming.jpg", parameters={}
+2025-05-02 20:39:06 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-02 20:39:06 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:39:06 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\ZJCG (truncated)...]
+2025-05-02 20:39:06 - Fetching image: vr-glasses-gaming.jpg
+2025-05-02 20:39:06 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-02 20:39:06 - Writing [file [C:\Users\dinuw\OneDrive\Desktop\SScw\Inventory Management System\backend\src\main\uploads\vr-g (truncated)...]
+2025-05-02 20:39:06 - Completed 200 OK
+2025-05-02 20:39:07 - Completed 200 OK
+2025-05-02 20:39:12 - GET "/user/852", parameters={}
+2025-05-02 20:39:12 - Mapped to backend.controller.UserController#getUserById(long)
+2025-05-02 20:39:12 - Fetching user by ID: 852
+2025-05-02 20:39:12 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-02 20:39:12 - Writing [backend.model.UserModel@7020a253]
+2025-05-02 20:39:12 - Completed 200 OK
+2025-05-02 21:59:29 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m15s984ms809µs800ns).
+2025-05-02 23:07:26 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-02 23:07:26 - Graceful shutdown complete
+2025-05-02 23:07:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-02 23:07:27 - HikariPool-1 - Shutdown initiated...
+2025-05-02 23:07:27 - HikariPool-1 - Shutdown completed.
+2025-05-03 08:52:03 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-03 08:52:03 - Starting BackendApplication using Java 22.0.1 with PID 8396 (C:\Users\MSI\Desktop\Inventory Management System\backend\target\classes started by MSI in C:\Users\MSI\Desktop\Inventory Management System\backend)
+2025-05-03 08:52:03 - No active profile set, falling back to 1 default profile: "default"
+2025-05-03 08:52:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03 08:52:04 - Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2025-05-03 08:52:05 - Tomcat initialized with port 8080 (http)
+2025-05-03 08:52:05 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-03 08:52:05 - Starting service [Tomcat]
+2025-05-03 08:52:05 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-03 08:52:05 - Initializing Spring embedded WebApplicationContext
+2025-05-03 08:52:05 - Root WebApplicationContext: initialization completed in 1540 ms
+2025-05-03 08:52:05 - Filter 'corsFilter' configured for use
+2025-05-03 08:52:05 - HikariPool-1 - Starting...
+2025-05-03 08:52:06 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
+2025-05-03 08:52:06 - Stopping service [Tomcat]
+2025-05-03 08:52:06 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-03 08:52:07 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:328)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at backend.BackendApplication.main(BackendApplication.java:13)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Failed to execute database script
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	... 10 common frames omitted
+Caused by: org.springframework.jdbc.datasource.init.UncategorizedScriptException: Failed to execute database script
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:67)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 17 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:52)
+	... 25 common frames omitted
+Caused by: java.sql.SQLException: Access denied for user 'appuser'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:113)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:861)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 26 common frames omitted
+2025-05-03 08:52:42 - HV000001: Hibernate Validator 7.0.5.Final
+2025-05-03 08:52:42 - Starting BackendApplication using Java 22.0.1 with PID 136276 (C:\Users\MSI\Desktop\Inventory Management System\backend\target\classes started by MSI in C:\Users\MSI\Desktop\Inventory Management System\backend)
+2025-05-03 08:52:42 - No active profile set, falling back to 1 default profile: "default"
+2025-05-03 08:52:43 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-03 08:52:43 - Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2025-05-03 08:52:44 - Tomcat initialized with port 8080 (http)
+2025-05-03 08:52:44 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-03 08:52:44 - Starting service [Tomcat]
+2025-05-03 08:52:44 - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-03 08:52:44 - Initializing Spring embedded WebApplicationContext
+2025-05-03 08:52:44 - Root WebApplicationContext: initialization completed in 1299 ms
+2025-05-03 08:52:44 - Filter 'corsFilter' configured for use
+2025-05-03 08:52:44 - HikariPool-1 - Starting...
+2025-05-03 08:52:44 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c7b137a
+2025-05-03 08:52:44 - HikariPool-1 - Start completed.
+2025-05-03 08:52:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-03 08:52:45 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-03 08:52:45 - HHH000026: Second-level cache disabled
+2025-05-03 08:52:45 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-03 08:52:45 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-03 08:52:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-03 08:52:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03 08:52:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-03 08:52:47 - 
+
+Using generated security password: 07749ff9-1d91-4f4e-94a6-9f0dbe4b80dc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-05-03 08:52:47 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-05-03 08:52:48 - 18 mappings in 'requestMappingHandlerMapping'
+2025-05-03 08:52:48 - Patterns [/uploads/**] in 'resourceHandlerMapping'
+2025-05-03 08:52:48 - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-03 08:52:48 - ControllerAdvice beans: 3 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-03 08:52:48 - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-03 08:52:48 - Tomcat started on port 8080 (http) with context path '/'
+2025-05-03 08:52:48 - Started BackendApplication in 6.287 seconds (process running for 6.821)
+2025-05-03 08:57:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-03 08:57:21 - Initializing Servlet 'dispatcherServlet'
+2025-05-03 08:57:21 - Detected StandardServletMultipartResolver
+2025-05-03 08:57:21 - Detected AcceptHeaderLocaleResolver
+2025-05-03 08:57:21 - Detected FixedThemeResolver
+2025-05-03 08:57:21 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6195ce27
+2025-05-03 08:57:21 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@cda988
+2025-05-03 08:57:21 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-03 08:57:21 - Completed initialization in 1 ms
+2025-05-03 08:57:22 - POST "/login", parameters={}
+2025-05-03 08:57:22 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-03 08:57:22 - Read "application/json;charset=UTF-8" to [{email=virtualphone414@gmail.com, password=Qwer1234, captchaToken=03AFcWeA7ms4hTtYQkI1yM4psIbMI6haMC (truncated)...]
+2025-05-03 08:57:22 - Login attempt for email: virtualphone414@gmail.com
+2025-05-03 08:57:22 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7ms4hTtYQkI1yM4psIbMI6haMCAbwWDrZRvZR_RjPeoyEDN7gVLh5F3g9ZZ1D5Z71s0VOntNHC6bxu2kDva8wqkLSNNPsddUpWK8x2dAsUFQ4hCAGsqwSMteyRG6srs276s78lxVHezjr1HuzT7Chcy9UwCNJTGJx_g1VHEIJ_H7wXlo0VI8YaG6m4YcZtCRLQAVKkGoxzp2aKF7951Fr0sMT0xNnChVJ_FnefuOsOYmu9EHjgtdgTIqMEVam0vEPfKb0ZQoklnCLBfb1NjtTTC8X26SPbu_vv4fQkp8B7IVi6GlVCk1a85XHWwixZOsEZQQGl4hYfjUDPDzE9XzuQ9l2EdmA69fZVMJjfWoSIVYkwgO3vIrPxf3GYHpbRDS76bgH3njx8ojBE-EhBHO2IIk3MlJdO_T5IoR5OyvXBdmrqn_SEwA_M9awgi4Vysk4S8NSNcCel6TSn3c9C4vUX4TaGbuxqktr7pOZJ7Yu45kU7jjCl6J-E4xhUiy5pzE_SxYL6-CH-c613HX0Hr_VpimPubdjRzzK1oBNOd2C9mXcnxD81y7yleC-OWLTCg4aZ7ilLK_ofNw8U1FbGOdaBn2pWs-de7ynChqHScWROB_8n2AbBalFYhnkWT-tX83OJ3ZTvArp4-K7WYi4zA69QrN_a9Pz8vDiIllyzY3phH4ucPzdlIVw7RYRq4ge_IwJt_kESazJ__LU75rZCj306N1Y-jQCVzCq_COOp7poYZS4pDdrwEBd9NkrBu26QSAziUngUvkhI3-9dguV8j6usi8i7258SIx8zgPtvN5SM8ahf0jCXchJ5yqZeHdzl3vtB1TvurCfMyM_8XcK87NpcnWSQztJr4vf-Le8c71ZfzWFzcfRiOzrs9pMgDEFl2ctr9jQgGh6bBBi760mgouWssJW3Tj35hE9pb83vBPototBAg5vsCCEPb6Kxn61J8R1Rw7my8hiUrNgx0YkeOGIEaNX0P_Mw-rekd6CiiRBoIEExVyj3eTvOYuYqDtZ20rwoLrHS1J2gz5H7F1BNtMJkK3QSlZ8PvYwEOlPKfUrNUdkCAKoKg6rhU1iLX6t-vSQ6jYKdmeUmtIGF1W8JIxtwSUcDsc-jBebRyjIeuMU8BmPTaR2-0lqOCKRDKe1Eue6XMCGEzqimOyMk5WrvZd_upCWaq6-5h6SrvENt3E_aH98nyb-to6OahXUAgDemaAaPpyQ5SYOr7_k-TdJHs5i3vv0_2_RrwtiLh0wB_egi7u3ExY6Fv5AJ4dHhgRAI5AV9f-cR4OMr4GvzQ1qgAKapgae45k9CuTUYD3eqmIk2Dg9lRn96h0YLvDCpsjZet7C11rYNMvR0ILBTrayVesYpx1oR5xzwLifwFC-49mk1EKQn9eug99qQJRgk5abAU_iwXxh3OU0BoaCxsK707-96nqSZbH6r4wC72i6JM_LDkNaN3nf5m5-jWqwXQG4-TlmpIcCtIIpY5UXucuQb4h2sAfdblTWpoE4nvhw9ymYDUYkA7PnPnjoIppocHfI_l4Gri6vq4pg5GtdIqRMM5SxUz7EhA-Io0hfh0ed0fwrStS-J5QQV49E55JjsH-7vbYtLGDB9AdkWypaOdsPPEsGtsGrz00N4eRM1QblIKYBR9vwKxfAf_Iv7pseNoeANFDmHeNxMlpX-QoVVvMzcTbT-li7mrWJC0xiPLRDrxsHFVxNVfSvVtPaSiqhDrFt0KgtKKCqeVnEDgxU9zxM_kK7rNTrXgxd7dBAL7DCMLwgM6TlsEwm8YBtpgBhsbtQ2MBnpkO5Sjb55t9dWZSgJ4PiI5LAvBUpd_3eOoWxi6-J8x_3UuT2MxH9ikeQYnZA9QHiTM2Keb68dNIoxwjAYkTi7O5gdSWJDtFvFQ4vv0h-ls5zVhAK3jgHH3wLuC-XDNUk-kUKpQs6UdcwxdJpIFVq13rxfGA-zTpwxaBl_pS3Awm21_UCjROFPvsMUTTtH8vMyDvqHwrE2yzIULl3KNSAND8gV1aBK5APSXIAfg7VG0maAJbiQkRhOdmAA5ji3zqc9P_DwvAd9Kl93l-3pZ9IDgCMAPGa3xI1IvtwYUvs8gcW7vFU3pbrJ8f9SwrY6sCgqlTKbz09moZ_e-JdxrUdL0UrsrvoQPT4U7HSGcF_S3q5vpiU
+2025-05-03 08:57:22 - POST "/login", parameters={}
+2025-05-03 08:57:22 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-03 08:57:22 - Read "application/json;charset=UTF-8" to [{email=virtualphone414@gmail.com, password=Qwer1234, captchaToken=03AFcWeA7ms4hTtYQkI1yM4psIbMI6haMC (truncated)...]
+2025-05-03 08:57:22 - Login attempt for email: virtualphone414@gmail.com
+2025-05-03 08:57:22 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7ms4hTtYQkI1yM4psIbMI6haMCAbwWDrZRvZR_RjPeoyEDN7gVLh5F3g9ZZ1D5Z71s0VOntNHC6bxu2kDva8wqkLSNNPsddUpWK8x2dAsUFQ4hCAGsqwSMteyRG6srs276s78lxVHezjr1HuzT7Chcy9UwCNJTGJx_g1VHEIJ_H7wXlo0VI8YaG6m4YcZtCRLQAVKkGoxzp2aKF7951Fr0sMT0xNnChVJ_FnefuOsOYmu9EHjgtdgTIqMEVam0vEPfKb0ZQoklnCLBfb1NjtTTC8X26SPbu_vv4fQkp8B7IVi6GlVCk1a85XHWwixZOsEZQQGl4hYfjUDPDzE9XzuQ9l2EdmA69fZVMJjfWoSIVYkwgO3vIrPxf3GYHpbRDS76bgH3njx8ojBE-EhBHO2IIk3MlJdO_T5IoR5OyvXBdmrqn_SEwA_M9awgi4Vysk4S8NSNcCel6TSn3c9C4vUX4TaGbuxqktr7pOZJ7Yu45kU7jjCl6J-E4xhUiy5pzE_SxYL6-CH-c613HX0Hr_VpimPubdjRzzK1oBNOd2C9mXcnxD81y7yleC-OWLTCg4aZ7ilLK_ofNw8U1FbGOdaBn2pWs-de7ynChqHScWROB_8n2AbBalFYhnkWT-tX83OJ3ZTvArp4-K7WYi4zA69QrN_a9Pz8vDiIllyzY3phH4ucPzdlIVw7RYRq4ge_IwJt_kESazJ__LU75rZCj306N1Y-jQCVzCq_COOp7poYZS4pDdrwEBd9NkrBu26QSAziUngUvkhI3-9dguV8j6usi8i7258SIx8zgPtvN5SM8ahf0jCXchJ5yqZeHdzl3vtB1TvurCfMyM_8XcK87NpcnWSQztJr4vf-Le8c71ZfzWFzcfRiOzrs9pMgDEFl2ctr9jQgGh6bBBi760mgouWssJW3Tj35hE9pb83vBPototBAg5vsCCEPb6Kxn61J8R1Rw7my8hiUrNgx0YkeOGIEaNX0P_Mw-rekd6CiiRBoIEExVyj3eTvOYuYqDtZ20rwoLrHS1J2gz5H7F1BNtMJkK3QSlZ8PvYwEOlPKfUrNUdkCAKoKg6rhU1iLX6t-vSQ6jYKdmeUmtIGF1W8JIxtwSUcDsc-jBebRyjIeuMU8BmPTaR2-0lqOCKRDKe1Eue6XMCGEzqimOyMk5WrvZd_upCWaq6-5h6SrvENt3E_aH98nyb-to6OahXUAgDemaAaPpyQ5SYOr7_k-TdJHs5i3vv0_2_RrwtiLh0wB_egi7u3ExY6Fv5AJ4dHhgRAI5AV9f-cR4OMr4GvzQ1qgAKapgae45k9CuTUYD3eqmIk2Dg9lRn96h0YLvDCpsjZet7C11rYNMvR0ILBTrayVesYpx1oR5xzwLifwFC-49mk1EKQn9eug99qQJRgk5abAU_iwXxh3OU0BoaCxsK707-96nqSZbH6r4wC72i6JM_LDkNaN3nf5m5-jWqwXQG4-TlmpIcCtIIpY5UXucuQb4h2sAfdblTWpoE4nvhw9ymYDUYkA7PnPnjoIppocHfI_l4Gri6vq4pg5GtdIqRMM5SxUz7EhA-Io0hfh0ed0fwrStS-J5QQV49E55JjsH-7vbYtLGDB9AdkWypaOdsPPEsGtsGrz00N4eRM1QblIKYBR9vwKxfAf_Iv7pseNoeANFDmHeNxMlpX-QoVVvMzcTbT-li7mrWJC0xiPLRDrxsHFVxNVfSvVtPaSiqhDrFt0KgtKKCqeVnEDgxU9zxM_kK7rNTrXgxd7dBAL7DCMLwgM6TlsEwm8YBtpgBhsbtQ2MBnpkO5Sjb55t9dWZSgJ4PiI5LAvBUpd_3eOoWxi6-J8x_3UuT2MxH9ikeQYnZA9QHiTM2Keb68dNIoxwjAYkTi7O5gdSWJDtFvFQ4vv0h-ls5zVhAK3jgHH3wLuC-XDNUk-kUKpQs6UdcwxdJpIFVq13rxfGA-zTpwxaBl_pS3Awm21_UCjROFPvsMUTTtH8vMyDvqHwrE2yzIULl3KNSAND8gV1aBK5APSXIAfg7VG0maAJbiQkRhOdmAA5ji3zqc9P_DwvAd9Kl93l-3pZ9IDgCMAPGa3xI1IvtwYUvs8gcW7vFU3pbrJ8f9SwrY6sCgqlTKbz09moZ_e-JdxrUdL0UrsrvoQPT4U7HSGcF_S3q5vpiU
+2025-05-03 08:57:22 - Accept=[application/json, application/*+json]
+2025-05-03 08:57:22 - Accept=[application/json, application/*+json]
+2025-05-03 08:57:23 - Response 200 OK
+2025-05-03 08:57:23 - Reading to [backend.service.CaptchaResponse]
+2025-05-03 08:57:23 - Response 200 OK
+2025-05-03 08:57:23 - Reading to [backend.service.CaptchaResponse]
+2025-05-03 08:57:23 - Captcha verification failed for email: virtualphone414@gmail.com
+2025-05-03 08:57:23 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:23 - Writing [{message=Captcha verification failed}]
+2025-05-03 08:57:23 - Completed 400 BAD_REQUEST
+2025-05-03 08:57:24 - User logged in successfully: virtualphone414@gmail.com
+2025-05-03 08:57:24 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:24 - Writing [{id=402, message=Login successful}]
+2025-05-03 08:57:24 - Completed 200 OK
+2025-05-03 08:57:27 - GET "/me", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-03 08:57:27 - User session found for ID: 402
+2025-05-03 08:57:27 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:27 - Writing [{id=402, fullName=chamindu chamod, email=virtualphone414@gmail.com}]
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - GET "/inventory", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-03 08:57:27 - Fetching all inventory items
+2025-05-03 08:57:27 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:27 - Writing [[backend.model.InventoryModel@6a9c175d, backend.model.InventoryModel@5c2975eb, backend.model.Invento (truncated)...]
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - GET "/uploads/NOKIA%20Xpress%20Music.jpeg", parameters={}
+2025-05-03 08:57:27 - GET "/uploads/MOVSSOU%20E7.jpeg", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - GET "/uploads/Laptop-img.jpg", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - GET "/uploads/Earbuds.jpeg", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - GET "/uploads/JBL%20Go%204.jpeg", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - GET "/uploads/SAMSUNG%20GALAXY%20S24%20ULTRA.jpeg", parameters={}
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - Fetching image: SAMSUNG GALAXY S24 ULTRA.jpeg
+2025-05-03 08:57:27 - Fetching image: NOKIA Xpress Music.jpeg
+2025-05-03 08:57:27 - Fetching image: Earbuds.jpeg
+2025-05-03 08:57:27 - Fetching image: JBL Go 4.jpeg
+2025-05-03 08:57:27 - Fetching image: Laptop-img.jpg
+2025-05-03 08:57:27 - Fetching image: MOVSSOU E7.jpeg
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Laptop-img.jpg]]
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\JBL Go 4.jpeg]]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\SAMSUNG GALAXY S24 U (truncated)...]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\MOVSSOU E7.jpeg]]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\NOKIA Xpress Music.j (truncated)...]
+2025-05-03 08:57:27 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:27 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Earbuds.jpeg]]
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - GET "/uploads/Nokia%203310.jpeg", parameters={}
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - GET "/uploads/WhatsApp%20Image%202023-08-21%20at%2017.04.07.jpg", parameters={}
+2025-05-03 08:57:27 - Completed 200 OK
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:27 - GET "/uploads/apple%20iPhone%20X.jpeg", parameters={}
+2025-05-03 08:57:27 - Fetching image: Nokia 3310.jpeg
+2025-05-03 08:57:27 - Fetching image: WhatsApp Image 2023-08-21 at 17.04.07.jpg
+2025-05-03 08:57:27 - Image not found: WhatsApp Image 2023-08-21 at 17.04.07.jpg
+2025-05-03 08:57:28 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:28 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:28 - Nothing to write: null body
+2025-05-03 08:57:28 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:28 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Nokia 3310.jpeg]]
+2025-05-03 08:57:28 - Completed 404 NOT_FOUND
+2025-05-03 08:57:28 - Fetching image: apple iPhone X.jpeg
+2025-05-03 08:57:28 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:28 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\apple iPhone X.jpeg]]
+2025-05-03 08:57:28 - Completed 200 OK
+2025-05-03 08:57:28 - Completed 200 OK
+2025-05-03 08:57:45 - POST "/login", parameters={}
+2025-05-03 08:57:45 - Mapped to backend.controller.UserController#login(Map, HttpSession)
+2025-05-03 08:57:45 - Read "application/json;charset=UTF-8" to [{email=virtualphone414@gmail.com, password=Qwer1234, captchaToken=03AFcWeA7Az6LskKW9umzEOGQdn_xFbJhh (truncated)...]
+2025-05-03 08:57:45 - Login attempt for email: virtualphone414@gmail.com
+2025-05-03 08:57:45 - HTTP POST https://www.google.com/recaptcha/api/siteverify?secret=6LcnPCYrAAAAADHUFru7nDFQuWcxHsNH60BCk7pY&response=03AFcWeA7Az6LskKW9umzEOGQdn_xFbJhhFbOGfZlLcNtI4SxIM9Wsh_qBx9rOjHjtCniF2DceA0_fSH_a6BiCjNFeurD-oUQRQfzQKCIPjowO7ucob-E2XtaICS8cBd2kT8VzXtkqTF3VDb_D8w0M4l-x0FxrLcmdsjlxxY2F5cqO2hIsNRxhhsh0RjwlJZ0iR-OE-f1dbu6crFz_5KYT-yJZrQod0m4pJGMOm1VxHbhsBBCaOOHL4_ZwKgIdCX7j5476w6eJqum3nf1eAZyU2qnavBEChV4Jw7xuoB1laHHvWOKLUYW-42d7Wu1n1RPnh1nNih_8OX_ohnC0auE5yYfxXuW50o8Iezv_RYz1ZrjhF0UsX6DEu3MZh6PxpImpOa8kZYuYLZC_rcfB9OmUXqXHGn6sSvarJ_W5KAsU6T8CvMWdX7R6RpsVaHs5orE17RxTYnKCmc3CRmlSJqFPOzGCXRVO9wEyBqaTtaxc01fL78Zxz4nXw_fCvPlgls3_X52ltL6nN3KOTrRUes5ZZyNO65kjJe-DOSx-vheCmFD_S8JPwI_hjIi3JkB663hrvAEiuRFGD_MlUtCswroh_o1AmkHTGWGZYmJGnn9I-t1cc-ovYInYhehIUWKaUgQ4jXob_fxUrKJ6PfcRiG4zLJHEm6EgCevzDYg3L5XEEIytsIBPIQSrFAeu2zpUzmvqXIgJu67ZyvPtUB8vcJje0bzC0J0JnlUIqwkKsOV7mvvyE-ZsSymUWqVtjJEbVFKC7BgSVFYM_d5LadgX6zPBvlJ6AkYuzbrR_bVXnQ5X2RDoeOqbQTq9zVBNPiH30fC00lBtzIH8TIGK8iTdmzxtLNsZitiD8Vo5rC35KBpCq4rRBGmssuQ4SEhawGo8vpxtxfBPUN3q1mW_LzQIGi3gTKlAWKGIdFGghlQTXM-F2GKVsBB8SRYmULF2-I0fI6Ibz7pE3-e_QPo2PkS9ALnKT25FeiKb_LEAwdiu-CeY9fki7WfvKdneUISdvunmKUxrL-ZlDQmZ5jRvDPQfwqMu34j2Ky2A_E0Nvdv7ZnfThVLnc1FO7-GdCgv7-Yk30Z95qX_p-0O9FF6S58YB4AgGw2arZKDLEdHllb89rr1BpdUIRZqF6uxc5wxmpDbdbeJD8QkbpiBPMiGZFUo8LinIN8CRsMIfBwxQAXgIrx0wQVCBFk1fClQkoSkL2sq_Hfs1tCXhGFf-gRngt8t7CKC3C8GJrSn0iGLJyLtOXK0tD8g3uIxbvYB7DgAS8I2-AYX7R4kDEmP4a2SApirTxT-hHjeoiX4inEBDcUrtPn2_-nQw2HrjWPzfsG_RATy2QgEQiJFYSGPYMy2th0-Bwb7NBZYDKvgZ4bLAd9WeYl2mEHP5Y6ofvPxu0qSzRVn9L7TptjP2e1rEXqJXzgl8C9IkX1kgJ-qkYlQWOlzOAd0aLd69vvk39n4BExc1uav61jJIniIA1Hfo7asXJBoN_KCNMltZvhewMheZ9XRIakH7m-nLIH_MxdJSXVnfahXBTvD_0CX-_ZFP-um5vWRj6gGGK1JnVnyqDocubmi39OXpX1c4ORqjbEHcoSz77q4u7Ct4cR8YdnFwmFwtdd6ANXRPp7RWH7_r7_EU2WL_iTnKa5z3FtSBLLOkWAKbc5H2B1_L8qfBkmOzYt7MYUaIvsk4rvH3QbHAUfgOplOSJYLH2xyhy2p_cLk15N4R-JG2OO-raMaTIZBmUYXRcjaVyD7QPVFHlE1fk-n9AAEXvMufanIuc1qSOoVa9j8dPpfJwmsEzRfJGyP-zLT-11-mkLAVy5PKxMeRUQ2wQb77aJoo2ScwwKp8IR1vS5ht_Tzo_EPaOcdZCe7tvtkiqiBvHHuFK8ZNrRw3usobMay-THM7ZOr6Rg6PdjB_ucZMSEZ0yMWrEPqrow6UNeTytYrPrkeWx0JiMHuzN6Fspp-ZOcQb-lkbjfmfszwumHQAGkRY9eHu9Dq98eBbutFaal2yttXWkNX6ap-GFPTrDXgxpzwmiA1zrEYjiNIKANeXulBbXE6_A2kGx6TDW-BrkQrhcjQemfMPrBk9PO4VcqACbzUOFI3h50MbVDcGwCfCVIT1bbX4SHhbD_insMMtVacILpx7_vvUDC9SD5Ria7YWrJAvNtWPJTw8MbQxX3o
+2025-05-03 08:57:45 - Accept=[application/json, application/*+json]
+2025-05-03 08:57:46 - Response 200 OK
+2025-05-03 08:57:46 - Reading to [backend.service.CaptchaResponse]
+2025-05-03 08:57:46 - User logged in successfully: virtualphone414@gmail.com
+2025-05-03 08:57:46 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:46 - Writing [{id=402, message=Login successful}]
+2025-05-03 08:57:46 - Completed 200 OK
+2025-05-03 08:57:49 - GET "/me", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-03 08:57:49 - User session found for ID: 402
+2025-05-03 08:57:49 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [{id=402, fullName=chamindu chamod, email=virtualphone414@gmail.com}]
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - GET "/inventory", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getAllItems()
+2025-05-03 08:57:49 - Fetching all inventory items
+2025-05-03 08:57:49 - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [[backend.model.InventoryModel@522d240b, backend.model.InventoryModel@3535854d, backend.model.Invento (truncated)...]
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - GET "/uploads/Laptop-img.jpg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - GET "/uploads/MOVSSOU%20E7.jpeg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - GET "/uploads/NOKIA%20Xpress%20Music.jpeg", parameters={}
+2025-05-03 08:57:49 - Fetching image: MOVSSOU E7.jpeg
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - GET "/uploads/Earbuds.jpeg", parameters={}
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - GET "/uploads/SAMSUNG%20GALAXY%20S24%20ULTRA.jpeg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - GET "/uploads/JBL%20Go%204.jpeg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - Fetching image: JBL Go 4.jpeg
+2025-05-03 08:57:49 - Fetching image: Laptop-img.jpg
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Fetching image: NOKIA Xpress Music.jpeg
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Laptop-img.jpg]]
+2025-05-03 08:57:49 - Fetching image: Earbuds.jpeg
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\NOKIA Xpress Music.j (truncated)...]
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Earbuds.jpeg]]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\MOVSSOU E7.jpeg]]
+2025-05-03 08:57:49 - Fetching image: SAMSUNG GALAXY S24 ULTRA.jpeg
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\JBL Go 4.jpeg]]
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\SAMSUNG GALAXY S24 U (truncated)...]
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - GET "/uploads/Nokia%203310.jpeg", parameters={}
+2025-05-03 08:57:49 - GET "/uploads/apple%20iPhone%20X.jpeg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - Fetching image: apple iPhone X.jpeg
+2025-05-03 08:57:49 - GET "/uploads/WhatsApp%20Image%202023-08-21%20at%2017.04.07.jpg", parameters={}
+2025-05-03 08:57:49 - Mapped to backend.controller.InventoryController#getImage(String)
+2025-05-03 08:57:49 - Fetching image: Nokia 3310.jpeg
+2025-05-03 08:57:49 - Fetching image: WhatsApp Image 2023-08-21 at 17.04.07.jpg
+2025-05-03 08:57:49 - Image not found: WhatsApp Image 2023-08-21 at 17.04.07.jpg
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Using 'image/avif', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [*/*, application/json, application/*+json]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\apple iPhone X.jpeg]]
+2025-05-03 08:57:49 - Writing [file [C:\Users\MSI\Desktop\Inventory Management System\backend\src\main\uploads\Nokia 3310.jpeg]]
+2025-05-03 08:57:49 - Nothing to write: null body
+2025-05-03 08:57:49 - Completed 404 NOT_FOUND
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:57:49 - Completed 200 OK
+2025-05-03 08:58:53 - GET "/me", parameters={}
+2025-05-03 08:58:53 - Mapped to backend.controller.UserController#getLoggedInUser(HttpSession)
+2025-05-03 08:58:53 - No user in session
+2025-05-03 08:58:53 - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, application/json, application/*+json]
+2025-05-03 08:58:53 - Writing ["Not logged in"]
+2025-05-03 08:58:53 - Completed 401 UNAUTHORIZED
+2025-05-03 10:15:17 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-03 10:15:17 - Graceful shutdown complete
+2025-05-03 10:15:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-03 10:15:17 - HikariPool-1 - Shutdown initiated...
+2025-05-03 10:15:17 - HikariPool-1 - Shutdown completed.
