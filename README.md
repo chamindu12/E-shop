@@ -29,7 +29,7 @@ Developed a secure user and inventory management system for an online shop using
 
 ## 🔧 How to Run the Project
 
-### 1️⃣ Start MySQL Database  
+## 1️⃣ Start MySQL Database  
 Make sure MySQL is running and create the database:
 
 ```sql
@@ -37,14 +37,14 @@ CREATE DATABASE inventory_management;
 ```
 
 ---
-###2️⃣ Run Backend
+## 2️⃣ Run Backend
 
 cd backend          <br>
 mvn clean install   <br>
 mvn spring-boot:run <br>
 
 ---
-###3️⃣ Run Frontend
+## 3️⃣ Run Frontend
 
 cd frontend                                             <br>
 npm install    # Run this once to install dependencies  <br>
